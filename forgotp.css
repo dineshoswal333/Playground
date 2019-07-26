@@ -6,15 +6,14 @@
         border:1px solid black;
         float: center;
         width: 25%;
-        height: 600px; 
+        height: 700px; 
         padding:20px;
 
     }
     .box2
     {
         float: center;
-        height: 500px; 
-        border-radius: 40px;
+        height: 600px; 
          border: 1px solid black;
         border-block-start-width: 5px;
         border-left-width: 5px;
@@ -35,8 +34,12 @@
     {
         padding-right: 80%;
     }
+    .textbox
+    {
+        padding-right: 143px;
+    }
   
     .button
     {
-        float: center;
+        padding-right: 250px; 
     }
