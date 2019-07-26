@@ -1,0 +1,32 @@
+.box
+{
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 400px;
+    margin-top: 50px;
+    float:center;
+    height: 600px;
+    width: 50%;
+    background-color: gray;
+    border: 2px solid black;
+    padding: 20px;
+
+}
+.box2
+{
+    position: relative;
+    float: center;
+    width: 65%;
+    height: 200px;
+    margin-left: 130px;
+    margin-right: 200px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    background-color: white;
+    border: 2px solid black;
+    border-block-start-width: 5px;
+    border-block-end-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    padding: 10px;
+}
