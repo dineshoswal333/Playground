@@ -1,0 +1,65 @@
+
+.box
+    {
+        position: absolute;
+        margin-left: 400px;
+        margin-right: 400px;
+        border:4px solid black;
+        float: center;
+        width: 25%;
+        height: 600px; 
+        padding:20px;
+
+
+    }
+    .box2
+    {
+        height: 500px;
+        float: center;
+        align-content: center;
+        border-radius: 50px;
+        border:2px solid black;
+        border-block-start-width: 5px;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-block-end-width: 5px;
+        padding: 20px;
+    }
+
+    
+    .email
+    {
+        size: 30px;
+    }
+    .warning1
+    {
+        color: brown;
+        font-size: 10px;
+        padding-right: 80px;
+    }
+    
+    .password
+    {
+        size: 30px;
+    }
+    .warning2
+    {
+        color: brown;
+        font-size: 10px;
+        padding-right: 80px;
+       
+    }
+    .checkbox
+    {
+        float:left;
+    }
+    
+    
+    .forgotpassword
+    {
+        float:right;
+    }
+    .button
+    {
+        float: center;
+    }
