@@ -1,0 +1,90 @@
+.box
+{
+    position: absolute;
+    background-color: gray;
+    margin-left: 200px;
+    margin-right:300px;
+    border: 1px solid black;
+    margin-block-start: 40px;
+    margin-bottom: 30px;
+    height: 700px;
+    width: 60%;
+    float: center;
+}
+.box2
+{
+    float: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    width: 40%;
+    height: 50px;
+    margin-left: 250px;
+    margin-right: 300px;
+    margin-top: 194px;
+
+}
+.additem
+{
+    float: left;
+    padding-left: 20px;
+}
+.cancel
+{
+    float:right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.box3
+{
+    float: center;
+    background-color: white;
+    border: 1px solid black;
+    width: 40%;
+    height: 400px;
+    margin-left: 250px;
+}
+.description
+{
+    float: left;
+    padding-left: 20px;
+}
+
+.qty
+{
+   float:left;
+   padding-left:20px;
+}
+
+.FDD
+{
+   float: left; 
+   padding-left: 20px;
+}
+.AP
+{
+   float: left; 
+   padding-left: 20px;
+}
+.box4
+{
+        float: center;
+        background-color: white;
+        border: 1px solid black;
+        width: 40%;
+        height: 50px;
+        margin-left: 250px;
+}  
+.cancel1
+{
+    float: left;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.done
+{
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
