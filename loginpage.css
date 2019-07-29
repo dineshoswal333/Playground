@@ -2,6 +2,7 @@
 .box
     {
         position: absolute;
+        background-color: #F6F8F9;
         margin-left: 350px;
         margin-right: 100px;
         margin-top: 100px;
@@ -14,16 +15,14 @@
     .box2
     {
         float: center;
+        background-color: white;
         margin: auto;
-        margin-top:5px;
-        height: 450px;
+        margin-top:3px;
+        height: 370px;
         width: 95%; 
         border-radius: 20px;
          border: 1px solid grey;
-        border-block-start-width: 2px;
-        border-left-width: 2px;
-        border-right-width: 2px;
-        border-block-end-width:2px;
+         box-shadow: 5px 5px gray;
         padding: 20px;
     }
     .login
@@ -46,10 +45,7 @@
     {
         padding-left: 40px;
     }
-    .forgotpassword
-    {
-
-    }
+  
 
     .checkbox
     {
@@ -77,4 +73,5 @@
     .button
     {
         padding-right: 260px;
+        padding-top: 20px;
     }
