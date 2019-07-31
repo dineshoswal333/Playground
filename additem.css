@@ -4,7 +4,7 @@
     background-color: #B5B5B5;
     margin-left: 250px;
     margin-right:300px;
-    border: 1px solid black;
+    border: 1px solid #747474;
     margin-block-start: 40px;
     margin-bottom: 30px;
     height: 700px;
@@ -17,12 +17,12 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #747474;
     width: 50%;
     height: 50px;
     margin-left: 220px;
     margin-right: 300px;
-    margin-top: 70px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,6 +31,7 @@
 }
 .additem
 {
+    color: #747474;
     padding-left: 20px;
 }
 .img
@@ -40,9 +41,9 @@
 .box3
 {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #747474;
     width: 50%;
-    height: 444px;
+    height: 380px;
     margin-left: 220px;
     display: flex;
     flex-direction: column;
@@ -50,12 +51,14 @@
 }
 .description
 {
+    color: #747474;
     float: left;
     padding-left: 20px;
 }
 
 .qty
 {
+    color: #747474;
    float:left;
    padding-left:20px;
 }
@@ -63,6 +66,7 @@
 
 .FDD
 {
+    color: #747474;
    float: left; 
    padding-left: 20px;
 }
@@ -75,13 +79,16 @@
 }
 .AP
 {
+    color: #747474;
    float: left; 
    padding-left: 20px;
 }
 .box4
 {
         background-color: white;
-        border: 1px solid black;
+        border: 1px solid #747474;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         width: 50%;
         height: 50px;
         margin-left: 220px;
@@ -92,6 +99,9 @@
 }  
 .cancel
 {
+    color: #5A5A5A;
+    text-decoration: underline;
+    text-decoration-color: #5A5A5A;
     padding-left: 20px;
 }
 .button
