@@ -1,3 +1,7 @@
+*
+{margin: 0;
+padding: 0;
+}
 .box
 {
     margin: auto;
@@ -13,6 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
 }
 .right
 {
@@ -45,7 +50,7 @@
 .box4
 {
     float: left;
-    padding-top: 130px;
+    padding-top: 145px;
     width: 5%;
     height: 1200px;
     border: 1px solid #f6f8f9;
