@@ -30,6 +30,7 @@
 .additem
 {
     color: #747474;
+    font-size: 22px;
     padding-left: 20px;
 }
 .img
@@ -75,11 +76,24 @@
     align-items: flex-start;
     justify-content: space-evenly;
 }
+.bx
+{
+    
+    border: 1px solid white;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+   
+}
 .AP
 {
     color: #747474;
    float: left; 
    padding-left: 20px;
+  
 }
 .box4
 {
@@ -111,6 +125,6 @@ button
     color: white;
     background-color: #32BDD2;
     border-radius: 20px;
-    height: 25px;
-    width: 65px;
+    height: 30px;
+    width: 70px;
 }
