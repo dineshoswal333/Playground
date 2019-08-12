@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/loginwarning.css">
 <title> login page </title>
+<script>
+        function init()
+        {
+                window.location.href="myreq.html";
+                console.info(loginbuttonpressed);              
+        }
+        console.log(init);
+        console.log(Element);
+        console.log(MouseEvent);
+        console.log(location);
+</script>
 </head>
 <body>
 <div class="box">
@@ -11,6 +22,7 @@
          <div class="login">
         <h2><u> LOGIN WARNING </u> </h2>
         </div>
+
 
        <div class="email">
            <p>Email or user name</p>
@@ -36,13 +48,13 @@
         </div>
         </div>
          <div class="forgotpassword">
-         <p><u>Forgot Password ?</u></p>
+         <a href="forgot password.html">forgot password ?</a>
          </div> 
         
         </div>
          
            <div class="button">
-        <button type="submit">Login</button>
+        <button type="button" onclick="init()">Login</button>
                 </div>
             
 

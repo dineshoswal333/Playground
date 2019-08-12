@@ -14,11 +14,11 @@
 {
     position: relative;
     float: center;
-    width: 490px;
-    height: 230px;
-    margin-left: 520px;
+    width: 690px;
+    height: 270px;
+    margin-left: 420px;
     margin-right: 200px;
-    margin-top: 220px;
+    margin-top: 180px;
     margin-bottom: 100px;
     border-radius: 10px;
     background-color: white;
@@ -28,14 +28,14 @@
 .header
 {
     padding-top: 30px;
-    font-size: 13px;
+    font-size: 16px;
     padding-left: 40px;
     color: #595959;
 }
 .text
 {
-    padding-top: 10px;
-    font-size: 14px;
+   
+    font-size: 18px;
     padding-left: 40px;
     color: #747474;
 }
