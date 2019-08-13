@@ -3,7 +3,7 @@
     position: absolute;
 
     float:center;
-    height: 730px;
+    height: 930px;
     width: 100%;
     background-color:  #747474;
     border: 2px solid black;
@@ -14,7 +14,7 @@
 {
     position: relative;
     float: center;
-    width: 690px;
+    width: 900px;
     height: 270px;
     margin-left: 420px;
     margin-right: 200px;
