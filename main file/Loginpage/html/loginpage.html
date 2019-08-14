@@ -8,12 +8,15 @@
      function init()
      {
         location.href="login warning.html";
+        document.getElementById("p").style.cursor="pointer";
          console.info(loginbuttonpressed);
      }
         console.log(init);
         console.log(Element);
         console.log(MouseEvent);
         console.log(location);
+        
+   
 
       
  </script>
@@ -51,7 +54,9 @@
         </div>
          
            <div class="button">
-        <button type="button"  onclick="init()">Login</button>
+             
+            
+        <button type="button"  onclick="init()" id="p">Login</button>
                 </div>
             
 

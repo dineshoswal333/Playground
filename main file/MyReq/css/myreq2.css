@@ -73,6 +73,10 @@ padding-right: 20px;
   {
  padding-left: 160px;
   }
+  #p
+  {
+      cursor: pointer;
+  }
 button
 {
     background-color: #32BDD2;

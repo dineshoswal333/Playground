@@ -41,7 +41,10 @@
         color: #505050;
         font-size: 14px;
     }
-   
+    #p
+    {
+        cursor: pointer;
+    }
     .password
     {
         padding-top: 30px;
