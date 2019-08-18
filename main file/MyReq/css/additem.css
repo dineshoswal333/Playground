@@ -5,7 +5,7 @@
 
     border: 1px solid #747474;
 
-    height: 900px;
+    height: 770px;
     width: 100%;
     float: center;
 }
@@ -20,7 +20,7 @@
     height: 50px;
     margin-left: 370px;
     margin-right: 300px;
-    margin-top: 140px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;

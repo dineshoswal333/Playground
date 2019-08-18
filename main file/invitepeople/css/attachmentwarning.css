@@ -8,6 +8,10 @@ padding: 0;
     border:1px solid #f6f8f9;
     width: 100%;  
 }
+#p
+{
+    cursor: pointer;
+}
 .box1
 {
     margin: auto;
