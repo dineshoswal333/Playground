@@ -28,6 +28,11 @@ padding: 0;
     justify-content: space-evenly;
 
 }
+#p
+{
+    cursor: pointer;
+    
+}
 .box2
 {
    border: 1px solid #f6f8f9;

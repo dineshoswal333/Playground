@@ -14,4 +14,10 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="title_activity_request_page">RequestPage</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_my_request_page">MyRequestPage</string>
+    <string name="title_activity_next">NextActivity</string>
+    <string name="title_activity_burger1">Burger1</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
 </resources>

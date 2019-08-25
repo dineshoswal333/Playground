@@ -1,7 +1,5 @@
 package com.example.login;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button loginbutton;
@@ -40,18 +40,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               if (email.getText().toString().equals("") || (password.getText().toString().equals("")) )
-                {
+                if (email.getText().toString().equals("") || (password.getText().toString().equals(""))) {
                     warning1.setVisibility(View.VISIBLE);
                     warning2.setVisibility(View.VISIBLE);
                     tv1.setVisibility(View.VISIBLE);
                     tv2.setVisibility(View.VISIBLE);
                 }
-                else
-                {
-                    Intent intent1=new Intent(MainActivity.this,burger.class);
-                    startActivity(intent1);
-                }
+
 
             }
         });
