@@ -4,12 +4,29 @@
         <meta charset=utf-8>
         <title>addpeople3</title>
         <link rel="stylesheet" type="text/css" href="../css/addpeople3.css">
+        <script>
+                function init1()
+     {
+        location.href="addpeople2.html";
+        document.getElementById("p").style.cursor="pointer";
+     }
+            function init()
+        {
+           location.href="../../invitepeople/html/invite.html";
+           document.getElementById("p1").style.cursor="pointer";
+        }
+    
+       
+   
+   
+   
+           </script>
     </head>
         <body>
             <div>
-                <div class="box1">
+                <div class="box1" onclick="init()" id="p1">
                 
-                 <div class="box2">
+                 <div class="box2" >
                 <div class="Additem">
                     <p><b>Add People </b></p>
                     </div>
@@ -19,14 +36,13 @@
                  </div>
                  </div>
                  <div class="box3">
-                        <div class="search">
-                                <a href="../../invitepeople/html/invite.html">
-                                <div class="txt"> <p>search</p>
-                                </div>
-                            <div class="logo">
-                                <img src="../images/r.png" alt="search button" style="height:25px; width:40px;">   
-                         </div>    
-                            </a> </div>
+                    <div class="search" onclick="init1()" id="p">
+                        <div class="txt"> <p>search</p>
+                        </div>
+                    <div class="logo">
+                         <img src="../images/r.png" alt="search button" style="height:25px; width:40px;">  
+                 </div>    
+                     </div>
                              <div class="k">
                         <p></p>
                             
@@ -101,14 +117,14 @@
                  
                  
                 
-                          <div class="box4">
+                          <div class="box4" >
                                 <div class="cancel"><a href="../../invitepeople/html/invite.html">
                                  <p><u>CANCEL</u></p>           </a>
                                 </div>
                                 <div class="mainbutton">
                                     <p>1 person selected</p>
-                                <div class="button"><a href="../../invitepeople/html/invite.html">
-                                        <button type="submit">Done</button></a>
+                                <div class="button">
+                                        <button type="submit">Done</button>
                                             </div>
                                             </div>
                                 </div>

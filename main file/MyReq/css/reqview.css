@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+#p1
+{
+    cursor: pointer;
+}
 .box1
 {
     margin: auto;

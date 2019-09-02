@@ -64,24 +64,33 @@
 
 
 }
+
+#p1
+{
+    cursor: pointer;
+}
 .search
 {
- width: 90%;
- height: 50px;
- border-radius:30px;
- border: 1px solid #b5b5b5;
- margin-top: 20px;
- display: flex;
- flex-direction: row;
- align-items: center;
-justify-content: space-between;
- 
+    
+    width: 1068.32px;
+    height:42.36px;
+    border-radius:30px;
+    border: 1px solid #b5b5b5;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .txt
 {
  color: #909090;
  padding-left: 20px;
+}
+.logo
+{
+padding-right: 20px;
 }
 .k
 {

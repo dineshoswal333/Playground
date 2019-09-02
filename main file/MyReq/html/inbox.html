@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/inbox.css">
 <title> Inbox</title>
+<script>
+    function init()
+    {
+        location.href="lastpage.html";
+        document.getElementById(p1).style.cursor="pointer";
+    }
+</script>
+
 </head>
 <body> 
                <div class="box1">
@@ -34,7 +42,7 @@
                             <h2 style="font-size:18px; color:#505050; padding-top:35px; padding-left: 60px;">INBOX</h2>
                             <p style="font-size:14px; color:#909090;padding-top:5px; padding-left: 60px;">Lorem ipsum dolor sit amet.sit consectetut adipicing elit. mauris mattis, tortot sit amet</p>
                         <button type="button">PUBLIC</button>
-                        <button type="button" style="background-color:#FFFFFF; color:#245070;">PRIVATE</button>
+                        <button type="button" onclick="init()" id="p1" style="background-color:#FFFFFF; color:#245070;">PRIVATE</button>
 
                         <div class="box4">
                                 <div class="img1">

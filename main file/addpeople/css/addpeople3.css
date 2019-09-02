@@ -8,6 +8,10 @@
     float:center;
 
 }
+#p1
+{
+    cursor: pointer;
+}
 .box2
 {
     float: center;
@@ -67,7 +71,7 @@
 .search
 {
     
-    width:1168.32px;
+    width: 1068.32px;
     height:42.36px;
     border-radius:30px;
     border: 1px solid #b5b5b5;
@@ -77,6 +81,8 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .txt
 {
