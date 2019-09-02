@@ -1,41 +1,40 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
 .box
 {
-    position: absolute;
-
-    float:center;
-    height: 930px;
+    position: absolute;  
+    margin: auto;  
     width: 100%;
     background-color:  #747474;
-    border: 2px solid black;
-    padding: 20px;
-
+    border: 1px solid black;
+}
+#p
+{
+    cursor: pointer;
 }
 .box2
 {
-    position: relative;
+    margin: auto;
     float: center;
-    width: 900px;
-    height: 270px;
-    margin-left: 420px;
-    margin-right: 200px;
-    margin-top: 180px;
-    margin-bottom: 100px;
+    width: 40%;
+    margin-left: 30%;
+    padding: 3%;
+    padding-bottom: 4%;
+    margin-right: 30%;
+    margin-top: 15%;
+    margin-bottom: 20%;
     border-radius: 10px;
     background-color: white;
     border: 1px solid black;
-   padding: 10px;
 }
 .header
 {
-    padding-top: 30px;
-    font-size: 16px;
-    padding-left: 40px;
-    color: #595959;
+    float: center;
+    padding-right: 17.5%;
+      font-size: 16px;
+      color: #595959;
 }
-.text
-{
-   
-    font-size: 18px;
-    padding-left: 40px;
-    color: #747474;
-}
+

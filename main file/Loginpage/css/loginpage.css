@@ -9,17 +9,15 @@
         background-color: #F6F8F9;
         border: 1px solid #F6F8F9;
         width: 100%;
-        height:930px; 
-    
-
+        
     }
     .box2
     {
         background-color: white;
-        margin-top:15px;
-        margin-left:15px;
-        height: 900px;
-        width: 98%; 
+        margin: auto;
+        width: 98%;
+        padding: 5px;
+        padding-bottom: 16%;
         border-radius: 25px;
          border: 1px solid #F6F8F9;
          display: flex;
@@ -29,15 +27,17 @@
     }
     .login
     {
-        padding-right: 277px;
-        padding-top: 180px;
+        float: center;
+      padding-right: 17.5%;
         font-size: 16px;
         color: #595959;
 
     }
     .email
     {
-        padding-top: 30px;
+        float:center;
+        padding-top: 2%;
+        padding-right: 11.5%;
         color: #505050;
         font-size: 14px;
     }
@@ -47,7 +47,9 @@
     }
     .password
     {
-        padding-top: 30px;
+        float:center;
+        padding-top: 1%;
+        padding-right: 11.5%;
         color: #505050;
         font-size: 14px;
     }
@@ -63,33 +65,28 @@
     }
     .mid
     {
-        padding-top: 30px;
-        width: 36%;
+        padding-top: 1%;
+        width: 47%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     .checkbox
     {
-        padding-left: 05px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-evenly;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
     }
     button
     {
         color: white;
         background-color: #32BDD2;
-        width: 140px;
-        height: 43px;
         border-radius: 21px;
+       
     }
     .button
-    {
-        padding-top: 30px;
-        padding-right: 217px;
+    {   float:center;
+       
     }
-   
    

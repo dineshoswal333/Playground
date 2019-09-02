@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MainActivity extends AppCompatActivity {
     Button loginbutton;
     TextView fp;
@@ -45,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
                     warning2.setVisibility(View.VISIBLE);
                     tv1.setVisibility(View.VISIBLE);
                     tv2.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                    startActivity(intent);
                 }
 
 

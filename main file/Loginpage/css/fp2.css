@@ -6,81 +6,71 @@
 .box
     {
         position: absolute;
+        
         background-color: #F6F8F9;
         border: 1px solid #F6F8F9;
         width: 100%;
-        height:930px; 
     
 
     }
     .box2
     {
+        margin:auto;
         background-color: white;
-        margin-top:35px;
-        margin-top:15px;
-        margin-left:15px;
-        height: 900px;
-        width: 98%; 
+        width: 98%;
+        padding-bottom: 18%;
         border-radius: 25px;
-        border: 1px solid #F6F8F9;
+         border: 1px solid #F6F8F9;
+         display: flex;
+         flex-direction:column;
+         align-items: center;
        
          
     }
     
     .header
     {
-        padding-top:130px;
-        padding-left: 550px;
-        font-size: 16px;
-        color: #595959;
+        float: center;
+        padding-right: 17.5%;
+          font-size: 16px;
+          color: #595959;
     }
     .text
     {
-        padding-top:30px;
-        padding-left: 550px;
+        padding-top: 2%;
+       padding-right: 11%;
         font-size: 12px;
         color: #595959;
     }
+
     .email
     {
-        padding-top:30px;
-        padding-left: 550px;
+        float:center;
+        padding-top: 2%;
+        padding-right: 18%;
+        font-size: 14px;
         font-size: 12px;
         color: #595959;
     }
-    .textbox
-    {
-        padding-top:10px;
-        padding-left: 550px;
-        font-size: 1px;
-        color: #595959;
-    }
-    .warning1
-    {
-        padding-top: 20px;
-        padding-left: 550px;
-        font-size: 15px;
-        color:red;
-    }
-    .warning2
-    {
-        padding-top: 20px;
-        padding-left: 550px;
-        font-size: 15px;
-        color:red;
-    }
+    #p
+{
+    cursor: pointer;
+}
+.warning1
+{
+    color: red;
+    font-size: 15px;
+
+}
+.warning2
+{
+    font-size: 15px;
+    color:red;
+}
     button
     {
         color: white;
         background-color: #32BDD2;
-        width: 140px;
-        height: 43px;
+       
         border-radius: 21px;
-    }
-    .button
-    {
-        padding-top:30px;
-        padding-left: 550px;
-        font-size: 12px;
-        color: #595959;
     }

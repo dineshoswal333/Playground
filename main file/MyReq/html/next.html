@@ -4,6 +4,30 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/next.css">
 <title> Next Page </title>
+<script>
+     function init()
+     {
+        location.href="../../invitepeople/html/attachment.html";
+        document.getElementById("p1").style.cursor="pointer";
+     }
+
+
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
 </head>
 <body> 
     <div class="box">
@@ -15,9 +39,9 @@
                 <img src="../images/request-icons-05.png" alt="button" style="height:5.83px; width:9.39px; border-radius:50px">
             </div>
             </div>
-            <div class="box2">
-                <div class="box3">
-                    <div class="box4">
+            <div class="box2" style="height:auto; padding: 1%;">
+                <div class="box3" >
+                    <div class="box4" >
                         <div class="req">
                             <p><b>REQUISITION </b></p>
                         </div>
@@ -25,10 +49,10 @@
                             <img src="../images/2.png" alt="2nd" style="height:400px; width:80px;">
                         </div>
                     </div>
-            <div class="box5">
+            <div class="box5" >
                 <div class="box6">
                     <div class="box7">
-                        <div class="header">
+                        <div class="header" >
                             <h3> <b> ITEMS </b> </h3>
                             <div class="text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipscing elit. </p>
@@ -44,9 +68,15 @@
                         <div class="text2">
                             <p>IBM ThinkServer TS150 tower server with max <br>
                              1 x Intel xon E3 (Quad core)<br>
-                            E3-1225 v5* (3.3GHz/ cache 8MB)</p>
+                            E3-1225 v5* (3.3GHz/ cache 8MB)<br>
+                            <span id="dots">...</span><span id="more">/ STD MEMORY 8GB X 1/<br> MAX.MEMORY 64GB
+                                4 Slots/HARD <br> DRIVE 1 X 1TB SATA <br>3.5” 7.2k SATA 
+                                  STD. HDD BAY/ <br>3 bay MAX
+                                   HDD BAY upto 4 x<br> 3.5” +1 x 2.5” bay/<br>
+                                    OPTICAL Multi Burner/Integrated <br>RAID 0,1,5,10 (RAID 121i).</span></p>
                             <div class="h4">
-                        <h4> <b>READ MORE </b></h4>
+                                    <div onclick="myFunction()" id="myBtn">READ MORE</div>
+
                     </div>
                 </div>
                 <div class="right2">
@@ -57,12 +87,20 @@
                         <p>10 july 2019</p>
                     </div>
                     <div class="rate">
-                            <p>Rs. 45,000</p>
+                            <p style="margin-right:75px;">Rs. 45,000</p>
                         </div>   
-                        <div class="bl">
-                            <a href="popup3.html">
-                            <img src="../images/bl.png" alt="lines" style="height:38px; width:38px"></a>
-                            </div>
+                        <!-- <div class="bl"> -->
+                            
+                           
+                            <!-- </div> -->
+                            <div class="dropdown">
+                                    <div class="dropbtn"> <img src="../images/bl.png" onclick="init()" id="" alt="lines" style="height:38px; width:38px"></div>
+                                    <div class="dropdown-content">
+                                    <a href="#">EDIT</a>
+                                    <a href="#">DELETE</a>
+                                    </div>
+                                  </div>
+                       
                         </div>
                 </div>
                 <div class="box8">
@@ -161,13 +199,16 @@
                         </div>
                 </div>
                 <div class="bottom">
-                        <div class="save">
+                        <div class="save" id="p">
+                            <a href="sd.html">
                             <p><U>SAVE DRAFT</U></p>
+                        </a>
                         </div>
-                        <div class="back">
-                            <p><u>back</u></p>
+                        <div class="back" id="p">
+                            <a href="newreq.html">
+                            <p><u>BACK</u></p></a>
                         <div class="button">
-                            <button type="submit">NEXT -></button>
+                            <button type="submit"  id="p1" onclick="init()">NEXT -></button>
                         </div>
                     </div>
 
