@@ -10,7 +10,7 @@
                location.href="addpeople2a.html";
                document.getElementById("p").style.cursor="pointer";
             }
-            function init()
+            function main()
             {
                location.href="../../invitepeople/html/approval.html";
                document.getElementById("p1").style.cursor="pointer";
@@ -23,7 +23,7 @@
     </head>
         <body>
             <div>
-                <div class="box1" onclick="init()" id="p1">
+                <div class="box1" >
                 
                  <div class="box2">
                 <div class="Additem">
@@ -119,15 +119,15 @@
                  
                 
                           <div class="box4">
-                                
+                            <a href="../../invitepeople/html/approval.html">
                                 <div class="cancel">
-                                 <p><u>CANCEL</u></p>           
-                                </div>
+                                 <p><u>CANCEL</u></p>       
+                                </div></a>
                                 <div class="mainbutton">
                                     <p>you haven't selected any person</p>
                                 <div class="button">
                                        
-                                        <button type="submit">Done</button>
+                                        <button type="submit" onclick="main()" id="p1">Done</button>
                                             </div>
                                             </div>
                                 </div>
