@@ -8,6 +8,10 @@
     float:center;
 
 }
+#p
+{
+    cursor: pointer;
+}
 .box2
 {
     float: center;

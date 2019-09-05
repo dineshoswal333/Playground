@@ -5,21 +5,25 @@
         <title>addpeople2</title>
         <link rel="stylesheet" type="text/css" href="../css/addpeople2.css">
         <script>
-                function init()
-            {
-               location.href="../../invitepeople/html/approval.html";
-               document.getElementById("p1").style.cursor="pointer";
-            }
-         
-           
+            function init()
+        {
+           location.href="../../invitepeople/html/approval.html";
+           document.getElementById("p1").style.cursor="pointer";
+        }
+        function init1()
+     {
+        location.href="addpeoplea.html";
+        document.getElementById("p").style.cursor="pointer";
+     }
        
-       
-       
-               </script>
+   
+   
+   
+           </script>
     </head>
         <body>
             <div>
-                <div class="box1" onclick="init()" id="p1">
+                <div class="box1" >
                 
                  <div class="box2">
                 <div class="Additem">
@@ -30,7 +34,7 @@
                  </div>
                  </div>
                  <div class="box3">
-                        <div class="search">
+                        <div class="search" onclick="init1()" id="p">
                                 <div class="txt"> <p>search</p>
                                 </div>
                             <div class="logo">
@@ -52,14 +56,14 @@
                  
                 
                           <div class="box4">
-                                <div class="cancel">
+                                <div class="cancel" onclick="init()" id="p1">
                                        
                                  <p><u>CANCEL</u></p>        
                                 </div>
                                 <div class="mainbutton">
                                     <p>you haven't searched any people</p>
                                 <div class="button">
-                                        <button type="submit">Done</button>
+                                        <button type="submit" onclick="init()" id="p1">Done</button>
                                             </div>
                                             </div>
                                 </div>

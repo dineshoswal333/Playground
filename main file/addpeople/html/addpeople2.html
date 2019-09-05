@@ -12,7 +12,7 @@
         }
         function init1()
      {
-        location.href="addpeople2.html";
+        location.href="addpeople.html";
         document.getElementById("p").style.cursor="pointer";
      }
        
@@ -23,13 +23,13 @@
     </head>
         <body>
             <div>
-                <div class="box1" onclick="init()" id="p1">
+                <div class="box1">
                 
                  <div class="box2">
                 <div class="Additem">
                     <p><b>Add People </b></p>
                     </div>
-                    <div class="im">
+                    <div class="im" onclick="init()" id="p1">
                           
                     <img src="../images/c.png" alt="cancel" style="height:30px; width:25px; border-radius: 20px">
                  </div>
@@ -55,14 +55,14 @@
                  
                 
                           <div class="box4">
-                                <div class="cancel">
+                                <div class="cancel" onclick="init()" id="p1">
                                      
                                  <p><u>CANCEL</u></p>           
                                 </div>
                                 <div class="mainbutton">
                                     <p>you haven't searched any people</p>
-                                <div class="button">
-                                        <button type="submit">Done</button>
+                                <div class="button" >
+                                        <button type="submit" onclick="init()" id="p1">Done</button>
                                             </div>
                                             </div>
                                 </div>
