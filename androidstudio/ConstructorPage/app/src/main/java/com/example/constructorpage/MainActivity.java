@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
        construct c=new construct();
-       c.construct1();
+       c.construct();
     }
 }
