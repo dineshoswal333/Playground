@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button relative;
+    Button frame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +24,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        frame=findViewById(R.id.framebutton);
+        frame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,FrameLayout.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
