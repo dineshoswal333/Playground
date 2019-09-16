@@ -48,14 +48,14 @@ padding: 0;
    height: 800px;
    border: 1px solid #f6f8f9;
    background-color: white;
-   margin-left: 40px;
-   margin-top: 35px;
+   margin-left: 2%;
+   margin-top: 2%;
 }
 .box4
 {
     float: left;
     padding-top: 130px;
-    width: 5%;
+    width: 7%;
     height: 700px;
     border: 1px solid #f6f8f9;
     display:flex;
@@ -74,16 +74,16 @@ transform: rotate(-90deg);
 .box5
 {
     float: right;
-    width:94.72%;
+    width:90%;
     height:800px;
-    border: 1px solid #f6f8f9;
+    /* border: 1px solid #f6f8f9; */
 }
 .box6
 {
     
-   margin-top: 50px;
-  margin-left: 200px;
-    width:1000px;
+   margin-top: 5%;
+  margin-left: 1%;
+    width:90%;
     height:600px;
     border: 1px solid #F0F0F0;
 }
@@ -176,13 +176,13 @@ justify-content: space-between;
 }
 .save
 {
-   padding-left: 200px;
+   padding-left: 1%;
     color: #595959;
     font-size: 12px;
 }
 .back
 {
-    padding-right: 180px;
+    padding-right: 7%;
     color: #32BDD2;
     font-size: 16px;
     text-decoration: underline;

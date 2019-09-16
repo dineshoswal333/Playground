@@ -6,7 +6,7 @@ padding: 0;
 {
     margin: auto;
     border:1px solid #f6f8f9;
-    width: 100%;  
+    width: 99.9%;  
 }
 #p
 {
@@ -36,7 +36,7 @@ padding: 0;
 {
    border: 1px solid #f6f8f9;
    background-color: #F6F8F9;
-   height: 800px;
+   height: 700px;
    width: 100%;
    float: center;
 }
@@ -45,7 +45,7 @@ padding: 0;
     margin: auto;
     float: center;
    width: 95%;
-   height: 730px;
+   height: 630px;
    border: 1px solid #f6f8f9;
    background-color: white;
    margin-left: 40px;
@@ -56,7 +56,7 @@ padding: 0;
     float: left;
     padding-top: 130px;
     width: 5%;
-    height: 730px;
+    height: 550px;
     border: 1px solid #f6f8f9;
     display:flex;
     flex-direction: column;
@@ -75,16 +75,16 @@ transform: rotate(-90deg);
 {
     float: right;
     width:94.72%;
-    height:730px;
+    height:630px;
     border: 1px solid #f6f8f9;
 }
 .box6
 {
     
    margin-top: 50px;
-  margin-left: 200px;
-    width:1000px;
-    height:500px;
+  margin-left: 5%;
+    width:90%;
+    height:400px;
     border: 1px solid #F0F0F0;
 }
 .box7
@@ -110,8 +110,8 @@ transform: rotate(-90deg);
 .box8
 {
     float: left;
-    margin-top: 130px;
-    margin-left: 90px;
+    margin-top: 10%;
+    margin-left: 10%;
       width:400px;
       height:150px;
       border: 1px solid #F0F0F0;
@@ -139,7 +139,7 @@ border-radius: 30px;
 .box9
 {
     float: left;
-    margin-top: 90px;
+    margin-top: 6%;
       width:400px;
       height:150px;
       border: 1px solid #F0F0F0;
@@ -150,7 +150,7 @@ border-radius: 30px;
     margin-left: 20px;
     margin-top: 20px;
     height: 100px;
-    width: 350px;
+    width: 90%;
     border: dotted 3px  white;
 }
 .dropbox
@@ -168,7 +168,7 @@ border-radius: 30px;
 
 .bottom
 {
-   padding-top: 100px;
+   padding-top: 10%;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -176,13 +176,13 @@ justify-content: space-between;
 }
 .save
 {
-   padding-left: 200px;
+   padding-left: 5%;
     color: #595959;
     font-size: 12px;
 }
 .back
 {
-    padding-right: 180px;
+    padding-right: 3%;
     color: #32BDD2;
     font-size: 16px;
     text-decoration: underline;
