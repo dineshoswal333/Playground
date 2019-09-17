@@ -22,14 +22,32 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> date= new ArrayList<>();
         ArrayList<String> status= new ArrayList<>();
 
+
         title.add("PUR-2019-056");
+        title.add("PUR-2019-056");
+        title.add("PUR-2019-056");
+        title.add("PUR-2019-056");
+        title.add("PUR-2019-056");
+
         date.add("06 July 2019");
+        date.add("06 July 2019");
+        date.add("06 July 2019");
+        date.add("06 July 2019");
+        date.add("06 July 2019");
+
         status.add("APPROVED");
+        status.add("APPROVED");
+        status.add("APPROVED");
+        status.add("APPROVED");
+        status.add("APPROVED");
+
+
+
 //        String title[]={"PUR-2019-056","PUR-2019-056","PUR-2019-056","PUR-2019-056","PUR-2019-056"};
 //        String date[]={"06 July 2019","06 July 2019","06 July 2019","06 July 2019","06 July 2019"};
 //        String status[]={"APPROVED","APPROVED","APPROVED","APPROVED","APPROVED"};
 
-        ListAdapter listAdapter=new MyListAdaptor(getApplicationContext(),title,date,status);
+        MyListAdaptor listAdapter=new MyListAdaptor(getApplicationContext(),title,date,status);
         listView.setAdapter(listAdapter);
 
     }

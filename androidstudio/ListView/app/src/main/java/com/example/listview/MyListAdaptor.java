@@ -7,29 +7,31 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
 class MyListAdaptor extends BaseAdapter {
-    String title[] = {}, date[] = {}, status[] = {};
-    private Context context;
+    public Context context;
+    public ArrayList<String> title;
+    public ArrayList<String> date;
+    public ArrayList<String> status;
 
-    public MyListAdaptor(Context  applicationContext, String[] tvtitle, String[] tvdate, String[] tvstatus) {
-        this.context=context;
-        this.title=tvtitle;
-        this.date=tvdate;
-        this.status=tvstatus;
-
-    }
-
-    public MyListAdaptor(Context context, ArrayList<String> title, ArrayList<String> date, ArrayList<String> status) {
+    public MyListAdaptor(Context context, ArrayList<String> tvtitle, ArrayList<String> tvdate, ArrayList<String> tvstatus) {
+        this.context = context;
+        this.title = tvtitle;
+        this.date = tvdate;
+        this.status = tvstatus;
 
     }
 
 
     @Override
     public int getCount() {
-        return title.length;
+//        Toast.makeText(context, "Viratian"+title.size(), Toast.LENGTH_LONG).show();
+        return title.size();
+
     }
 
     @Override
@@ -44,7 +46,23 @@ class MyListAdaptor extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
-    }
+        View view = LayoutInflater.from(context).inflate(R.layout.list, parent, false);
+        TextView title1,date1,status1;
+        title1=view.findViewById(R.id.tvtitle);
+        date1=view.findViewById(R.id.tvdate);
+        status1=view.findViewById(R.id.tvstatus);
+
+        title1.setText(title.get(position));
+        date1.setText(date.get(position));
+        status1.setText(status.get(position));
+
+
+
+
+
+
+return view;
+
+        }
 
 }
