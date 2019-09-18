@@ -5,27 +5,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.mainloginpage.Model.RequestModel;
 
 import java.util.ArrayList;
 
 class MyListAdaptor extends BaseAdapter {
-    public Context context;
-    public ArrayList<String> title;
-    public ArrayList<String> date;
-    public ArrayList<String> status;
 
-    public MyListAdaptor(Context context, ArrayList<String> tvtitle, ArrayList<String> tvdate, ArrayList<String> tvstatus) {
-        this.context = context;
-        this.title = tvtitle;
-        this.date = tvdate;
-        this.status = tvstatus;
-
+    private Context context;
+    ArrayList<RequestModel> req;
+    public MyListAdaptor(Context context, ArrayList<RequestModel> requestlist) {
+        this.context=context;
+        this.req=requestlist;
     }
 
     @Override
     public int getCount() {
-        return title.size();
+        return req.size();
     }
 
     @Override
@@ -40,16 +38,23 @@ class MyListAdaptor extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = LayoutInflater.from(context).inflate(R.layout.listitems, parent, false);
+        View views=LayoutInflater.from(context).inflate(R.layout.listitems,parent,false);
         TextView title1,date1,status1;
-        title1=view.findViewById(R.id.tvtitle);
-        date1=view.findViewById(R.id.tvdate);
-        status1=view.findViewById(R.id.tvstatus);
+        ImageView bellicon;
 
-        title1.setText(title.get(position));
-        date1.setText(date.get(position));
-        status1.setText(status.get(position));
 
-        return view;
+        RequestModel request=this.req.get(position);
+        title1=views.findViewById(R.id.tvtitle);
+        date1=views.findViewById(R.id.tvdate);
+        status1=views.findViewById(R.id.tvstatus);
+        bellicon=views.findViewById(R.id.ivbellicon);
+
+
+        title1.setText(String.valueOf(request.getRequestnumber()));
+        date1.setText(String.valueOf(request.getDescription()));
+        status1.setText(String.valueOf(request.getRequestStatus()));
+        bellicon.setImageResource(R.drawable.bellicon1);
+
+        return views;
     }
 }

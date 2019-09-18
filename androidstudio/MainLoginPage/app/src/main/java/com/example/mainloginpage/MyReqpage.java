@@ -3,6 +3,8 @@ package com.example.mainloginpage;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.mainloginpage.Global.RequestStatus;
+import com.example.mainloginpage.Model.RequestModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -47,28 +49,39 @@ public class MyReqpage extends AppCompatActivity
         filter=findViewById(R.id.ivfilter);
         listView=findViewById(R.id.lvlistview);
 
-        ArrayList<String> title= new ArrayList<>();
-        ArrayList<String> date= new ArrayList<>();
-        ArrayList<String> status= new ArrayList<>();
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
 
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-        date.add("06 July 2019");
+        ArrayList<RequestModel> reqlist=new ArrayList<>();
 
-        status.add("APPROVED");
-        status.add("APPROVED");
-        status.add("APPROVED");
-        status.add("APPROVED");
-        status.add("APPROVED");
+        RequestModel requestModel=new RequestModel();
 
-        MyListAdaptor listAdapter=new MyListAdaptor(getApplicationContext(),title,date,status);
+        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel.setRequestStatus(RequestStatus.AWAITING_APPROVAL);
+        requestModel.setDescription("06 July 2019");
+        reqlist.add(requestModel);
+
+        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel.setRequestStatus(RequestStatus.APPROVED);
+        requestModel.setDescription("06 July 2019");
+        reqlist.add(requestModel);
+
+        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel.setRequestStatus(RequestStatus.CLOSED);
+        requestModel.setDescription("06 July 2019");
+        reqlist.add(requestModel);
+
+        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel.setRequestStatus(RequestStatus.DRAFT);
+        requestModel.setDescription("06 July 2019");
+        reqlist.add(requestModel);
+
+
+        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel.setRequestStatus(RequestStatus.REJECTED);
+        requestModel.setDescription("06 July 2019");
+        reqlist.add(requestModel);
+
+
+        MyListAdaptor listAdapter=new MyListAdaptor(getApplicationContext(),reqlist);
         listView.setAdapter(listAdapter);
 
 
