@@ -1,6 +1,5 @@
 package com.example.mainloginpage;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -21,95 +20,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListPopupWindow;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class MyReqpage extends AppCompatActivity
+public class RequisitionPage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    Button newreq;
-    ImageView filter;
-    ListPopupWindow listPopupWindow;
-    TextView pop;
-  ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_reqpage);
-        newreq=findViewById(R.id.newreqbutton);
-        filter=findViewById(R.id.ivfilter);
-        listView=findViewById(R.id.lvlistview);
-
-        ArrayList<String> title= new ArrayList<>();
-        ArrayList<String> date= new ArrayList<>();
-        ArrayList<String> status= new ArrayList<>();
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-        title.add("PUR-2019-056");
-
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-        date.add("06 July 2019");
-
-        status.add("APPROVED");
-        status.add("APPROVED");
-        status.add("APPROVED");
-        status.add("APPROVED");
-        status.add("APPROVED");
-
-        MyListAdaptor listAdapter=new MyListAdaptor(getApplicationContext(),title,date,status);
-        listView.setAdapter(listAdapter);
-
-
-//        String title[]={"Rose","Lotus","Jasmine","RCB","Bengularu Bulls"};
-//        String date[]={"22-Aug","24-Aug","28-Aug","30-Aug","2-Sep"};
-//        String status[]={"APPROVED","REJECTED","DRAFT","AWAITING","COMPLETED"};
-//        ListAdapter listAdapter=new MyListAdapter(getApplicationContext(),title,date,status);
-
-        newreq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MyReqpage.this,RequisitionPage.class);
-                startActivity(intent);
-            }
-        });
-
-
-        String[] products={"CLEAR", "APPROVED", "DRAFT","AWAITING",
-                "REJECTED"};
-        pop=findViewById(R.id.tvpopup);
-
-        listPopupWindow = new ListPopupWindow(
-                getApplicationContext());
-        listPopupWindow.setAdapter(new ArrayAdapter(
-                getApplicationContext(),
-                R.layout.popup, products));
-        listPopupWindow.setAnchorView(filter);
-        listPopupWindow.setModal(true);
-        filter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listPopupWindow.show();
-            }
-        });
-
-
-
-
-
-
-
+        setContentView(R.layout.activity_requisition_page);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -129,7 +47,6 @@ public class MyReqpage extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -143,7 +60,7 @@ public class MyReqpage extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my_reqpage, menu);
+        getMenuInflater().inflate(R.menu.requisition_page, menu);
         return true;
     }
 

@@ -8,21 +8,21 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 class MyListAdapter extends BaseAdapter {
-     String title[]={},  date[]={}, status[]={};
+     String titles[]={},  dates[]={}, statustext[]={};
      private Context context;
 
 
 
     public MyListAdapter(Context context, String[] title, String[] date, String[] status) {
         this.context=context;
-        this.title=title;
-        this.date=date;
-        this.status=status;
+        this.titles=title;
+        this.dates=date;
+        this.statustext=status;
     }
 
     @Override
     public int getCount() {
-        return title.length;
+        return titles.length;
     }
 
     @Override
@@ -36,21 +36,19 @@ class MyListAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int position, View view, ViewGroup viewGroup) {
         return null;
     }
 
-    public View getView(int position, View convertView, ViewGroup parent, char[][] tvtitle, char[][] tvdate, char[][] tvstatus) {
-        View view= LayoutInflater.from(context).inflate(R.layout.listview,parent,false);
-        TextView title,date,status;
-        title=view.findViewById(R.id.title);
-        date=view.findViewById(R.id.tvdate);
-        status=view.findViewById(R.id.tvstatus);
-
-
-        tvtitle.notifyAll(String.valueOf(title[position]));
-        tvdate.notifyAll(String.valueOf(date[position]));
-        tvstatus.notifyAll(String.valueOf(status[position]));
-        return view;
+    public View getView(int position, View convertView, ViewGroup parent, char[][] title, char[][] date, char[][] status) {
+////        View view= LayoutInflater.from(context).inflate(R.layout.listview,parent,false);
+//        TextView titles,dates,statustext;
+//        titles=view.findViewById(R.id.title);
+//        dates=view.findViewById(R.id.tvdate);
+//        statustext=view.findViewById(R.id.tvstatus);
+//        titles.setText(String.valueOf(title[position]));
+//        dates.setText(String.valueOf(date[position]));
+//        statustext.setText(String.valueOf(status[position]));
+        return null;
     }
 }

@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".RequisitionPage"
+            android:label="@string/title_activity_requisition_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MyReqpage"
             android:label="@string/title_activity_my_reqpage"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".MainActivity">
             <intent-filter>
