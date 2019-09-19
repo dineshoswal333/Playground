@@ -49,9 +49,7 @@ public class MyReqpage extends AppCompatActivity
         filter=findViewById(R.id.ivfilter);
         listView=findViewById(R.id.lvlistview);
 
-
         ArrayList<RequestModel> reqlist=new ArrayList<>();
-
         RequestModel requestModel=new RequestModel();
 
         requestModel.setRequestnumber("PUR-2019-056");
@@ -119,12 +117,6 @@ public class MyReqpage extends AppCompatActivity
                 listPopupWindow.show();
             }
         });
-
-
-
-
-
-
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
