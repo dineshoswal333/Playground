@@ -59,23 +59,26 @@ public class MyReqpage extends AppCompatActivity
         requestModel.setDescription("06 July 2019");
         reqlist.add(requestModel);
 
-        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel=new RequestModel();
+        requestModel.setRequestnumber("PUR-2019-028");
         requestModel.setRequestStatus(RequestStatus.APPROVED);
         requestModel.setDescription("06 July 2019");
         reqlist.add(requestModel);
 
-        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel=new RequestModel();
+        requestModel.setRequestnumber("PUR-2019-030");
         requestModel.setRequestStatus(RequestStatus.CLOSED);
         requestModel.setDescription("06 July 2019");
         reqlist.add(requestModel);
 
-        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel=new RequestModel();
+        requestModel.setRequestnumber("PUR-2019-018");
         requestModel.setRequestStatus(RequestStatus.DRAFT);
         requestModel.setDescription("06 July 2019");
         reqlist.add(requestModel);
 
-
-        requestModel.setRequestnumber("PUR-2019-056");
+        requestModel=new RequestModel();
+        requestModel.setRequestnumber("PUR-2019-009");
         requestModel.setRequestStatus(RequestStatus.REJECTED);
         requestModel.setDescription("06 July 2019");
         reqlist.add(requestModel);

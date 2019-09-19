@@ -11,8 +11,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="405dp"
-        android:layout_height="167dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +24,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="36dp"
             android:text="My Requests"
             android:textColor="#505050"
@@ -35,7 +37,7 @@
             android:layout_width="128dp"
             android:layout_height="54dp"
             android:layout_marginTop="27dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:background="#32BDD2"
             android:text="NEW REQUEST"
             android:textColor="@android:color/white"
@@ -65,10 +67,10 @@
             app:srcCompat="@drawable/search1" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="373dp"
+            android:layout_width="match_parent"
             android:layout_height="59dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/searchborder"
             app:layout_constraintEnd_toEndOf="parent"
@@ -123,10 +125,12 @@
     <ListView
         android:id="@+id/lvlistview"
         android:layout_width="match_parent"
-        android:layout_height="403dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
