@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -48,14 +49,27 @@ public class MyReqpage extends AppCompatActivity
         newreq=findViewById(R.id.newreqbutton);
         filter=findViewById(R.id.ivfilter);
         listView=findViewById(R.id.lvlistview);
+  listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View v, int position,
+                                long id) {
+
+                     Intent intent = new Intent(MyReqpage.this, ListViewActivity.class);
+
+                    startActivity(intent);
+                            }
+                    });
 
         ArrayList<RequestModel> reqlist=new ArrayList<>();
+
         RequestModel requestModel=new RequestModel();
 
         requestModel.setRequestnumber("PUR-2019-056");
         requestModel.setRequestStatus(RequestStatus.AWAITING_APPROVAL);
         requestModel.setDescription("06 July 2019");
         reqlist.add(requestModel);
+
+
 
         requestModel=new RequestModel();
         requestModel.setRequestnumber("PUR-2019-028");
@@ -84,6 +98,13 @@ public class MyReqpage extends AppCompatActivity
 
         MyListAdaptor listAdapter=new MyListAdaptor(getApplicationContext(),reqlist);
         listView.setAdapter(listAdapter);
+//        listView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent= new Intent(MyReqpage.this,ListViewActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 //        String title[]={"Rose","Lotus","Jasmine","RCB","Bengularu Bulls"};
