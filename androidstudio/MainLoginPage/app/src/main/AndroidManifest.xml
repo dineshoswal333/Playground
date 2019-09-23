@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListViewActivity"></activity>
+        <activity
+            android:name=".ItemsListView"
+            android:label="@string/title_activity_items_list_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".FragmentReqActivity"
+            android:label="@string/title_activity_fragment_req"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ListViewActivity" />
         <activity
             android:name=".RequisitionPage"
             android:label="@string/title_activity_requisition_page"

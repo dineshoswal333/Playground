@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if ((email.getText().toString().equals("Dinesh")) && (password.getEditText().getText().toString().equals("dinesh009"))) {
                     Toast.makeText( getApplicationContext(), "Login successful", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(MainActivity.this, MyReqpage.class);
-                    startActivity(intent);
+                    Intent intent1=new Intent(MainActivity.this,FragmentReqActivity.class);
+                    startActivity(intent1);
 
 
 

@@ -21,44 +21,46 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListPopupWindow;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class MyReqpage extends AppCompatActivity
+public class FragmentReqActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
     Button newreq;
     ImageView filter;
     ListPopupWindow listPopupWindow;
     TextView pop;
-  ListView listView;
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_reqpage);
+        setContentView(R.layout.activity_fragment_req);
         newreq=findViewById(R.id.newreqbutton);
         filter=findViewById(R.id.ivfilter);
         listView=findViewById(R.id.lvlistview);
-  listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> adapterView, View v, int position,
-                                long id) {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View v, int position,
+                                    long id) {
 
-                     Intent intent = new Intent(MyReqpage.this, ItemsListView.class);
+                Intent intent = new Intent(FragmentReqActivity.this, ListViewActivity.class);
 
-                    startActivity(intent);
-                            }
-                    });
+                startActivity(intent);
+            }
+        });
 
         ArrayList<RequestModel> reqlist=new ArrayList<>();
 
@@ -115,7 +117,7 @@ public class MyReqpage extends AppCompatActivity
         newreq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MyReqpage.this,RequisitionPage.class);
+                Intent intent=new Intent(FragmentReqActivity.this,RequisitionPage.class);
                 startActivity(intent);
             }
         });
@@ -214,5 +216,22 @@ public class MyReqpage extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    public  void myfn(View view) {
+        Fragment f1 = new MyRequestFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment1,f1);
+        fragmentTransaction.commit();
+    }
+
+    public  void myfn2(View view) {
+        Fragment f2 = new ReqViewFragment();
+        FragmentManager fragmentManager2 = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction2 = fragmentManager2.beginTransaction();
+        fragmentTransaction2.replace(R.id.fragment2,f2);
+        fragmentTransaction2.commit();
     }
 }

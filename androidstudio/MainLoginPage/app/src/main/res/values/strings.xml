@@ -15,4 +15,9 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="title_activity_requisition_page">RequisitionPage</string>
+    <string name="title_activity_fragment_req">FragmentReqActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_items_list_view">ItemsListView</string>
 </resources>
