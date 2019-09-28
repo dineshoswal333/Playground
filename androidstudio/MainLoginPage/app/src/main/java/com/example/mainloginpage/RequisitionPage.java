@@ -1,5 +1,6 @@
 package com.example.mainloginpage;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,9 +21,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 
 public class RequisitionPage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Button reqnextbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,18 @@ public class RequisitionPage extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+
+        reqnextbtn=findViewById(R.id.nextactbn);
+
+        reqnextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent reqstnintent=new Intent(RequisitionPage.this,NextActivity.class);
+                startActivity(reqstnintent);
+            }
+        });
+
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

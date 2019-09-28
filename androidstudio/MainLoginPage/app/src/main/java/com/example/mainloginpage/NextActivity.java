@@ -1,9 +1,8 @@
 package com.example.mainloginpage;
 
-import android.content.Intent;
 import android.os.Bundle;
-import com.example.mainloginpage.Global.RequestStatus;
-import com.example.mainloginpage.Model.RequestModel;
+
+import com.example.mainloginpage.ModelTwo.RequisitionModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -20,40 +19,21 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListPopupWindow;
+import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class FragmentReqActivity extends AppCompatActivity
+public class NextActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+     ListView reqstnlistview;
 
-
-
-//    private RequestDelegate requestDelegate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment_req);
-
-        MyRequestFragment myRequestFragment=new MyRequestFragment();
-        FragmentManager manager1=getSupportFragmentManager();
-        FragmentTransaction transaction1=manager1.beginTransaction();
-        transaction1.replace(R.id.mainlayout,myRequestFragment);
-        transaction1.commit();
-
-
-
+        setContentView(R.layout.activity_next);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -64,6 +44,30 @@ public class FragmentReqActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+
+        reqstnlistview=findViewById(R.id.requisitionlistview);
+        ArrayList<RequisitionModel> requisitionlist= new ArrayList<>();
+        RequisitionModel requisitionModel=new RequisitionModel();
+
+        requisitionModel.setRequisitiondescription("IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5\"(3.3 GHz /Cache 8 MB)... / STD MEMORY 8GB X 1/ MAX. MEMORY 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5\" 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto 4 x 3.5\" +1 x 2.5\" bay/ OPTICAL Multi Burner/Integrated RAID 0,1,5,10 (RAID 121i).");
+        requisitionlist.add(requisitionModel);
+
+        requisitionModel.setRequisitiondescription("Lenovo ThinkServer TS450 (PN:70M2001VIH) With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5”(3.3 GHz /Cache 8 MB)/ STD MEMORY 8GB X 1 MAX. MEMORY 64GB; 4 DIMM Memory Slots/ HARD DRIVE Open Bay/ 2.5” SAS/SATA HS Bays (8 bay MAX. HDD BAY upto 8 x 2.5” bay MAX. HDD BAY upto 16x2.5”)/OPTICAL Multi Burner/ PCIe RAID 0,1,10 (RAID 520i). Supports SAS & SATA drives/Power Supply Standard (Inbuilt) 1 x 450W Power Supply /Max: 2");
+        requisitionlist.add(requisitionModel);
+
+        requisitionModel.setRequisitiondescription("IBM X3300M4 Server With x3300M4/ Part NO:7382IA4/ Intel Xeon E5 1230v2 1.8 GHz,10 MB,1066MHz/ 1x 8GB RAM/ 1x500GB SATA HDD/ 3.5Simple-Swap/ MULTI BUTRNER");
+        requisitionlist.add(requisitionModel);
+
+        requisitionModel.setRequisitiondescription("IBM Lenovo ThinkServer RD450 Rack Server (PN:70Q90059IH) with 1 x Intel® Xeon® E5-2620v4 (2.1GHz/8C/20MB/85W/2133Mhz)/Max: 2 Processors/ STD MEMORY 16GB X 1 MAX. MEMORY 1 TB ;16 Slots/ HARD DRIVE : Open Bay (2.5” HOT Swap SAS/SATA STD. HDD BAY 8 bay / MAX. HDD BAY 16 bay with optical bay/24 bay without optical bay) / OPTICAL Multi Burner/ Integrated RAID 0,1,10 (RAID 110i). Supports only SATA drive/ Power Supply Standard (Inbuilt) 1 x 750W Power Supply Max: 2");
+        requisitionlist.add(requisitionModel);
+
+        requisitionModel.setRequisitiondescription("daptec 128 MB Raid Controller Pair. Pci-e SAS/SATA");
+        requisitionlist.add(requisitionModel);
+
+        ListAdapter listAdapter2=new RequisitionListAdapter(getApplicationContext(),requisitionlist);
+        reqstnlistview.setAdapter(listAdapter2);
+
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -72,7 +76,6 @@ public class FragmentReqActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
     }
-
 
 
 
@@ -89,7 +92,7 @@ public class FragmentReqActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my_reqpage, menu);
+        getMenuInflater().inflate(R.menu.next, menu);
         return true;
     }
 
@@ -132,8 +135,4 @@ public class FragmentReqActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-
-
-
 }

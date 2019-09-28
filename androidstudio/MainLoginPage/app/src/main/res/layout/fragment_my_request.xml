@@ -117,6 +117,16 @@
             android:textColor="#505050"
             app:layout_constraintStart_toEndOf="@+id/ivfilter"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/reqviewfragbtn"
+            android:layout_width="71dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ListView
