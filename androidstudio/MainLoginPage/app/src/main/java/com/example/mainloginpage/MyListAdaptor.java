@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mainloginpage.Delegates.RequestDelegate;
 import com.example.mainloginpage.Model.RequestModel;
 
 import java.util.ArrayList;
@@ -15,11 +16,13 @@ import java.util.ArrayList;
 class MyListAdaptor extends BaseAdapter {
 
     private Context context;
+//    private RequestDelegate;
     ArrayList<RequestModel> req;
     public MyListAdaptor(Context context, ArrayList<RequestModel> requestlist) {
         this.context=context;
         this.req=requestlist;
     }
+
 
     @Override
     public int getCount() {
@@ -48,7 +51,6 @@ class MyListAdaptor extends BaseAdapter {
         date1=views.findViewById(R.id.tvdate);
         status1=views.findViewById(R.id.tvstatus);
         bellicon=views.findViewById(R.id.ivbellicon);
-
 
         title1.setText(String.valueOf(request.getRequestnumber()));
         date1.setText(String.valueOf(request.getDescription()));

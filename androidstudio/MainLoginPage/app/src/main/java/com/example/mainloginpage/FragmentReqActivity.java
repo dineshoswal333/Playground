@@ -1,8 +1,9 @@
 package com.example.mainloginpage;
 
-import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import com.example.mainloginpage.Global.RequestStatus;
+
+import com.example.mainloginpage.Delegates.RequestDelegate;
 import com.example.mainloginpage.Model.RequestModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -25,28 +26,21 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListPopupWindow;
-import android.widget.ListView;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class FragmentReqActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,RequestDelegate {
 
 
 
-//    private RequestDelegate requestDelegate;
+    //    private RequestDelegate requestDelegate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_req);
 
         MyRequestFragment myRequestFragment=new MyRequestFragment();
+
+        myRequestFragment.setRequestDelegate(this);
         FragmentManager manager1=getSupportFragmentManager();
         FragmentTransaction transaction1=manager1.beginTransaction();
         transaction1.replace(R.id.mainlayout,myRequestFragment);
@@ -134,6 +128,38 @@ public class FragmentReqActivity extends AppCompatActivity
     }
 
 
+    @Override
+    public void onRequestItemClick(RequestModel requestModel) {
+        int orientation=this.getResources().getConfiguration().orientation;
+
+        if (orientation== Configuration.ORIENTATION_PORTRAIT)
+        {
+            Fragment reqViewFragment=new ReqViewFragment();
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.replace(R.id.mainlayout,reqViewFragment);
+            fragmentTransaction.commit();
+
+            ((ReqViewFragment) reqViewFragment).setData(requestModel);
+        }
+else
+        {
+            Fragment reqViewFragment=new ReqViewFragment();
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.replace(R.id.reqviewlandscape,reqViewFragment);
+            fragmentTransaction.commit();
+            ((ReqViewFragment) reqViewFragment).setData(requestModel);
+        }
 
 
+
+
+
+
+
+
+    }
 }

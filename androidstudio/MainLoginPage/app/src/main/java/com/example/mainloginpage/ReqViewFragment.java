@@ -11,7 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.example.mainloginpage.Model.RequestModel;
 import com.example.mainloginpage.ModelThree.ReqViewModel;
 
 import java.util.ArrayList;
@@ -21,6 +23,9 @@ public class ReqViewFragment extends Fragment {
     public ReqViewFragment(){
 
     }
+    TextView title,date,status;
+
+    RequestModel requestModel;
 
 
     @Override
@@ -29,6 +34,15 @@ public class ReqViewFragment extends Fragment {
         // Inflate the layout for this fragment
         View v1= inflater.inflate(R.layout.fragment_req_view, container, false);
         ListView reqviewlistview;
+    title=v1.findViewById(R.id.textView31);
+        date=v1.findViewById(R.id.textView33);
+        status=v1.findViewById(R.id.textView35);
+
+title.setText(requestModel.getRequestnumber());
+date.setText(requestModel.getDescription());
+status.setText(requestModel.getRequestStatus().toString());
+
+
 
 
 
@@ -57,5 +71,9 @@ public class ReqViewFragment extends Fragment {
 
 
         return v1;
+    }
+
+    public  void  setData(RequestModel requestModel){
+        this.requestModel=requestModel;
     }
 }
