@@ -1,5 +1,6 @@
 package carmel.bootcamp.dinesh;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,11 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class AttachmentFragment extends Fragment {
 
     Button uploadButton;
+    TextView saveDrafts;
 
     public AttachmentFragment() {
         // Required empty public constructor
@@ -24,6 +27,9 @@ public class AttachmentFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View views= inflater.inflate(R.layout.fragment_attachment, container, false);
+
+        saveDrafts=views.findViewById(R.id.tvSaveDrafts);
+        saveDrafts.setPaintFlags(saveDrafts.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
         uploadButton=views.findViewById(R.id.uploadButton);
         uploadButton.setOnClickListener(new View.OnClickListener() {

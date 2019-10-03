@@ -22,7 +22,7 @@
             android:layout_marginTop="8dp"
             android:text="REQUISITION"
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -133,7 +133,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="132dp"
+        android:layout_height="wrap_content"
         android:background="#F0F0F0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -154,18 +154,18 @@
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="186dp"
-            android:layout_height="wrap_content"
+            android:layout_width="215dp"
+            android:layout_height="54dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <ImageView
             android:id="@+id/ivAttachmentIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:src="@drawable/attachmenticon"
@@ -180,16 +180,17 @@
             android:layout_marginEnd="8dp"
             android:text="ATTACH FILES"
             android:textColor="#505050"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivAttachmentIcon" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/tvSaveDrafts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="SAVE DRAFT"
         android:textColor="#595959"
         android:textSize="18sp"
@@ -198,8 +199,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/nextbutton"
