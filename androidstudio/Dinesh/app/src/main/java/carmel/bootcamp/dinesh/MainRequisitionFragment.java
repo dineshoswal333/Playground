@@ -15,7 +15,7 @@ import android.widget.ImageView;
 
 public class MainRequisitionFragment extends Fragment {
 
-    ImageView attachmenticon;
+    ImageView attachmentIcon;
 
     public MainRequisitionFragment() {
         // Required empty public constructor
@@ -28,8 +28,8 @@ public class MainRequisitionFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main_requisition, container, false);
 
 
-        attachmenticon = view.findViewById(R.id.ivattachmenticon);
-        attachmenticon.setOnClickListener(new View.OnClickListener() {
+        attachmentIcon = view.findViewById(R.id.ivAttachmentIcon);
+        attachmentIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AttachmentFragment attachmentFragment = new AttachmentFragment();

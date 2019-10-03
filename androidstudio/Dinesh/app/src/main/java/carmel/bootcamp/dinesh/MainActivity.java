@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button fragmentbutton;
-        fragmentbutton=findViewById(R.id.fragmentbutton);
-        fragmentbutton.setOnClickListener(new View.OnClickListener() {
+        Button fragmentButton;
+        fragmentButton=findViewById(R.id.fragmentButton);
+        fragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,RequisitionThree.class);

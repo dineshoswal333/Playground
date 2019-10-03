@@ -1,7 +1,5 @@
 package carmel.bootcamp.dinesh;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,7 +13,7 @@ import android.widget.Button;
 
 public class AttachmentFragment extends Fragment {
 
-    Button uploadbutton;
+    Button uploadButton;
 
     public AttachmentFragment() {
         // Required empty public constructor
@@ -27,8 +25,8 @@ public class AttachmentFragment extends Fragment {
         // Inflate the layout for this fragment
         View views= inflater.inflate(R.layout.fragment_attachment, container, false);
 
-        uploadbutton=views.findViewById(R.id.uploadbutton);
-        uploadbutton.setOnClickListener(new View.OnClickListener() {
+        uploadButton=views.findViewById(R.id.uploadButton);
+        uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 UploadFragment uploadFragment=new UploadFragment();
