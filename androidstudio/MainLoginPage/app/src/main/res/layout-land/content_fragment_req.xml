@@ -9,22 +9,22 @@
     tools:context=".FragmentReqActivity"
     tools:showIn="@layout/app_bar_fragment_req">
 
-    <fragment
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/mainlayout"
         android:name="com.example.mainloginpage.MyRequestFragment"
-        android:layout_width="340dp"
-        android:layout_height="362dp"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/reqviewlandscape"
         android:name="com.example.mainloginpage.ReqViewFragment"
-        android:layout_width="373dp"
-        android:layout_height="365dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainlayout"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

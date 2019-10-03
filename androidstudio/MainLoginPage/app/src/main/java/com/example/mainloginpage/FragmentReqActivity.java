@@ -42,6 +42,7 @@ public class FragmentReqActivity extends AppCompatActivity
 
         myRequestFragment.setRequestDelegate(this);
         FragmentManager manager1=getSupportFragmentManager();
+        manager1.popBackStackImmediate(null,FragmentManager.POP_BACK_STACK_INCLUSIVE);
         FragmentTransaction transaction1=manager1.beginTransaction();
         transaction1.replace(R.id.mainlayout,myRequestFragment);
         transaction1.commit();
@@ -128,6 +129,33 @@ public class FragmentReqActivity extends AppCompatActivity
     }
 
 
+
+    @Override
+    public void onConfigurationChanged(Configuration configuration){
+        super.onConfigurationChanged(configuration);
+        if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT){
+            Fragment reqViewFragment=new ReqViewFragment();
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.replace(R.id.mainlayout,reqViewFragment);
+            fragmentTransaction.commit();
+        }
+        else
+        {
+            Fragment reqViewFragment=new ReqViewFragment();
+            FragmentManager fragmentManager=getSupportFragmentManager();
+            fragmentManager.popBackStackImmediate(null,FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.replace(R.id.reqviewlandscape,reqViewFragment);
+            fragmentTransaction.commit();
+
+        }
+
+    }
+
+
     @Override
     public void onRequestItemClick(RequestModel requestModel) {
         int orientation=this.getResources().getConfiguration().orientation;
@@ -147,19 +175,12 @@ else
         {
             Fragment reqViewFragment=new ReqViewFragment();
             FragmentManager fragmentManager=getSupportFragmentManager();
+            fragmentManager.popBackStackImmediate(null,FragmentManager.POP_BACK_STACK_INCLUSIVE);
             FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.replace(R.id.reqviewlandscape,reqViewFragment);
             fragmentTransaction.commit();
             ((ReqViewFragment) reqViewFragment).setData(requestModel);
         }
-
-
-
-
-
-
-
-
     }
 }
