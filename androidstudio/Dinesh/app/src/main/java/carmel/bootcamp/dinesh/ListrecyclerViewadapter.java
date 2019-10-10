@@ -1,6 +1,7 @@
 package carmel.bootcamp.dinesh;
 
 import android.content.Context;
+import android.media.AudioTrack;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,7 @@ class ListrecyclerViewadapter extends RecyclerView.Adapter {
         }
 
 
-        public void setUpData(String texts1,String texts2) {
+        public void setUpData(final String texts1, final String texts2) {
             text1.setText(texts1);
             text2.setText(texts2);
             ivDelete.setImageResource(R.drawable.deleteicon);
@@ -62,12 +63,21 @@ class ListrecyclerViewadapter extends RecyclerView.Adapter {
             ivDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    text1.setVisibility(View.GONE);
-                    text2.setVisibility(View.GONE);
-                    ivDelete.setVisibility(View.GONE);
+                    deleteItem(getAdapterPosition());
+
+
                 }
             });
         }
+        void deleteItem(int index) {
+            text1.endBatchEdit();
+            notifyItemRemoved(index);
+        }
+//        public void remove(int position) {
+//            text1.remove(position);
+//            notifyItemRemoved(position);
+//            notifyItemRangeChanged(position, text1.size());
+        }
 
     }
-}
+

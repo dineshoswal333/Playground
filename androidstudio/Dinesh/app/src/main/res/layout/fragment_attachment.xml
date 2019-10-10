@@ -34,7 +34,7 @@
     <TextView
         android:id="@+id/textView35"
         android:layout_width="264dp"
-        android:layout_height="41dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/textbroder"
@@ -213,7 +213,7 @@
     <TextView
         android:id="@+id/textView34"
         android:layout_width="264dp"
-        android:layout_height="41dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:background="@drawable/textbroder"
         android:hint="write the description…"
@@ -222,8 +222,8 @@
 
     <Button
         android:id="@+id/uploadButton"
-        android:layout_width="86dp"
-        android:layout_height="78dp"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/uploadbox"
         android:text="UPLOAD"
@@ -232,8 +232,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:src="@drawable/warningicon"
         app:layout_constraintStart_toStartOf="parent"
@@ -242,7 +242,7 @@
     <TextView
         android:id="@+id/textView39"
         android:layout_width="302dp"
-        android:layout_height="41dp"
+        android:layout_height="20dp"
         android:background="#FFF5F5"
         android:text="This field is required."
         android:textAlignment="textStart"

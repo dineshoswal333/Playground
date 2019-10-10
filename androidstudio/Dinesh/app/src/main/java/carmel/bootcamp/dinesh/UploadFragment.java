@@ -36,8 +36,8 @@ public class UploadFragment extends Fragment {
         saveDrafts.setPaintFlags(saveDrafts.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         recyclerView=view1.findViewById(R.id.recylerView);
 
-        String text1[]={"abc0037429023.doc                       976KB","abc003745gb9023.doc                       988KB"};
-        String text2[]={"Lorem ipsum dolor sit amet, consectetur…","Lorem ipsum dolor sit amet, consectetur…"};
+        String text1[]={"abc0037429023.doc                       976KB","abc003745gb9023.doc                       988KB","abc003745gb9023.doc                       988KB","abc003745gb9023.doc                       988KB"};
+        String text2[]={"Lorem ipsum dolor sit amet, consectetur…","Lorem ipsum dolor sit amet, consectetur…","Lorem ipsum dolor sit amet, consectetur…","Lorem ipsum dolor sit amet, consectetur…"};
         RecyclerView.Adapter recylerViewadapter=new ListrecyclerViewadapter(view1.getContext(),text1,text2);
         recyclerView.setLayoutManager(new LinearLayoutManager(view1.getContext()));
         recyclerView.setAdapter(recylerViewadapter);
