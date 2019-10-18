@@ -1,0 +1,71 @@
+.leftbox
+{   float: left;
+    width: 31.7%;
+    height:720px;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+
+.rightbox
+{   float: right;
+    width: 68%;
+    height: 720px;
+    border: 1px solid black;
+}
+.maindiv
+{
+    background-color: white;
+    border: 1px solid #747474;
+    width: 100%;
+    height: 720px;
+}
+button
+{
+ margin-left: 150px; 
+margin-top: 5px;
+font-size: 14px;
+background-color: #32BDD2;
+}
+.searchbox
+{
+
+border: 1px solid black;
+height:40px;
+width:70%;
+border-radius: 25px;
+margin-left: 50px;
+margin-top:5px;
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.searchimg
+{
+    width: 30%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contentbox
+{   
+    margin-top: 5px;
+    border: 1px solid black;
+    height:80px;    
+    width:80%;
+    margin-left: 50px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.details
+{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right:20%;
+}

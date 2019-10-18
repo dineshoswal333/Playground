@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/location.css">
+<title> locationmapping</title>
+</head>
+<style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 700px;  /* The height is 400 pixels */
+         width: 100%;  /* The width is the width of the web page */
+        }
+     </style>
+     </script>
+     <!--Load the API from the specified URL
+     * The async attribute allows the browser to render the page while the API loads
+     * The key parameter will contain your own API key (which is not needed for this tutorial)
+     * The callback parameter executes the initMap() function
+     -->
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+     </script>
+      <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: 20.5930, lng: 78.9629};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+                </script>
+     
+<body>
+    <div class="leftbox">
+        <div class="maindiv">
+        <button type="button" style="width:200px; height:40px;color:white;border-radius: 25px;">Hunt2Discover</button>
+       <div class="searchbox" style="float:left;">
+           <div class="searchimg">
+               <img src="../images/request-icons-03.png" alt="searchimage" style="height:33px;width:33px;padding-top: 5px;">
+               <span style="font-size:20px; color: grey;">Search</span>
+           </div>
+           <div class="cancelimg">
+               <img src="../images/cancel.png"  alt="cancelimage" style="height:33px;width:33px;padding-top: 5px;">
+            </div>
+         
+       </div>
+         <img src="../images/request-icons-01.png" alt="filterimage" style="height:40px;width:53px;padding-top: 5px; float:left">
+         <div style="clear:both"></div>
+         <div class="contentbox">
+            <img src="../images/sigdi.jpg"  alt="sigdirestaurant" style="height:70px;width:70px; padding-left: 5px;">
+            <div class="details">
+            <span><b>The Sigdi Restaurant</b></span>
+            <span>2050. m(Desai-Cross)</span>
+            <span>North Indian(pure veg)</span>    
+        </div>
+        <div class="call">
+            <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+        </div>
+
+         </div>
+         <div class="contentbox">
+                <img src="../images/anant.jpg"  alt="anantrestaurant" style="height:70px;width:70px; padding-left: 5px;">
+                <div class="details">
+                <span><b>Anant Residency</b></span>
+                <span>1998. m(Keshwapur)</span>
+                <span>North Indian(pure veg)</span>    
+            </div>
+            <div class="call">
+                <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+            </div>
+    
+             </div>
+             <div class="contentbox">
+                    <img src="../images/cinepolis.jpg"  alt="cinepolis" style="height:70px;width:70px; padding-left: 5px;">
+                    <div class="details">
+                    <span><b>Cinepolis Cinema</b></span>
+                    <span>100. m(Gokul-Road)</span>
+                    <span>Movie theatre in hubballi</span>    
+                </div>
+                <div class="call">
+                    <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                </div>
+        
+                 </div>
+                 <div class="contentbox">
+                        <img src="../images/hublibazaar.jpg"  alt="hublibazaar" style="height:70px;width:70px; padding-left: 5px;">
+                        <div class="details">
+                        <span><b>The Hubballi Bazaar</b></span>
+                        <span>700. m(Sai-Nagar)</span>
+                        <span>Grocery shop</span>    
+                    </div>
+                    <div class="call">
+                        <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                    </div>
+            
+                     </div>
+                     <div class="contentbox">
+                            <img src="../images/loreal.jpg"  alt="loreal" style="height:70px;width:70px; padding-left: 5px;">
+                            <div class="details">
+                            <span><b>Loreal Unisex Saloon</b></span>
+                            <span>100. m(Vidyanagar)</span>
+                            <span>UnisexSaloon</span>    
+                        </div>
+                        <div class="call">
+                            <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                        </div>
+                
+                         </div>
+                         <div class="contentbox">
+                                <img src="../images/streat.jpg"  alt="streat" style="height:70px;width:70px; padding-left: 5px;">
+                                <div class="details">
+                                <span><b>Streat</b></span>
+                                <span>500. m(Shirurpark)</span>
+                                <span>Foodcourt</span>    
+                            </div>
+                            <div class="call">
+                                <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                            </div>
+                    
+                             </div>
+                             <div class="contentbox">
+                                    <img src="../images/doughpaze.jpg"  alt="doughpaze" style="height:70px;width:70px; padding-left: 5px;">
+                                    <div class="details">
+                                    <span><b>Doughpaze</b></span>
+                                    <span>900. m(Vidyanagar)</span>
+                                    <span>CakeShop</span>    
+                                </div>
+                                <div class="call">
+                                    <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                                </div>
+                        
+                                 </div>
+    </div>
+    </div>
+    <div class="rightbox">
+            <div id="map"></div>
+         
+            
+    </div>
+    <div style="clear:both"></div>
+
+</body>
+</html>

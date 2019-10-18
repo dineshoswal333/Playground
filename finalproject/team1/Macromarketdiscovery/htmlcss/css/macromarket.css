@@ -1,0 +1,63 @@
+.firstdiv
+{
+    position: absolute;
+    background-color:white;
+    height: 99%;
+    width: 99%;
+}
+.maindiv
+{
+    background-color: white;
+    border: 1px solid #747474;
+    width: 100%;
+    height: 97%;
+}
+button
+{
+margin-left: 650px;
+margin-top: 5px;
+font-size: 14px;
+background-color: #32BDD2;
+}
+.searchbox
+{
+
+border: 1px solid black;
+height:40px;
+width:27%;
+border-radius: 25px;
+margin-left: 500px;
+margin-top:5px;
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.searchimg
+{
+    width: 20%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contentbox
+{   
+    margin-top: 5px;
+    border: 1px solid black;
+    height:80px;    
+    width:30%;
+    margin-left: 500px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.details
+{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right:20%;
+}
