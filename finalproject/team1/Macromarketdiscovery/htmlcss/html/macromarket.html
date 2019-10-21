@@ -4,6 +4,47 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/macromarket.css">
 <title> Macromarket</title>
+<style>
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  /* border: 1px solid #ddd; */
+  /* margin-top: -1px; */
+  /* background-color: #f6f6f6; */
+  /* padding: 12px; */
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block
+}
+
+    #myUL li a:hover:not(.header) {
+    background-color: #eee;
+    }
+</style>
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
 </head>
 <body>
 <div class="firstdiv">
@@ -14,7 +55,7 @@
        <div class="searchbox" style="float:left;">
            <div class="searchimg">
                <img src="../images/request-icons-03.png" alt="searchimage" style="height:33px;width:33px;padding-top: 5px;">
-              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
                
            </div>
            <div class="cancelimg">
@@ -24,6 +65,9 @@
        </div>
          <img src="../images/request-icons-01.png" alt="filterimage" style="height:40px;width:53px;padding-top: 5px; float:left">
          <div style="clear:both"></div>
+
+
+       <ul id="myUL"> <li><a href="#" style="color:black">
          <div class="contentbox">
             <img src="../images/sigdi.jpg"  alt="sigdirestaurant" style="height:70px;width:70px; padding-left: 5px;">
             <div class="details">
@@ -35,8 +79,9 @@
             <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
         </div>
 
-         </div>
-         <div class="contentbox" id="myUL">
+         </div></li></a>
+         <li><a href="#" style="color:black">
+         <div class="contentbox" onclick="init()" id="q">
                 <img src="../images/anant.jpg"  alt="anantrestaurant" style="height:70px;width:70px; padding-left: 5px;">
                 <div class="details">
                 <span><b>Anant Residency</b></span>
@@ -47,8 +92,9 @@
                 <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
             </div>
     
-             </div>
-             <div class="contentbox" id="myUL">
+             </div></li></a>
+             <li><a href="#">
+             <div class="contentbox">
                     <img src="../images/cinepolis.jpg"  alt="cinepolis" style="height:70px;width:70px; padding-left: 5px;">
                     <div class="details">
                     <span><b>Cinepolis Cinema</b></span>
@@ -59,8 +105,9 @@
                     <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
                 </div>
         
-                 </div>
-                 <div class="contentbox" id="myUL">
+                 </div></li></a>
+                 <li><a href="#" style="color:black">
+                 <div class="contentbox">
                         <img src="../images/hublibazaar.jpg"  alt="hublibazaar" style="height:70px;width:70px; padding-left: 5px;">
                         <div class="details">
                         <span><b>The Hubballi Bazaar</b></span>
@@ -71,8 +118,8 @@
                         <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
                     </div>
             
-                     </div>
-                     <div class="contentbox" id="myUL">
+                     </div></li></a>
+                    <li><a href="#" style="color:black"> <div class="contentbox">
                             <img src="../images/loreal.jpg"  alt="loreal" style="height:70px;width:70px; padding-left: 5px;">
                             <div class="details">
                             <span><b>Loreal Unisex Saloon</b></span>
@@ -83,8 +130,8 @@
                             <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
                         </div>
                 
-                         </div>
-                         <div class="contentbox" id="myUL">
+                         </div></li></a>
+                        <li><a href="#" style="color:black">  <div class="contentbox">
                                 <img src="../images/streat.jpg"  alt="streat" style="height:70px;width:70px; padding-left: 5px;">
                                 <div class="details">
                                 <span><b>Streat</b></span>
@@ -95,8 +142,8 @@
                                 <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
                             </div>
                     
-                             </div>
-                             <div class="contentbox" id="myUL">
+                             </div></li></a>
+                            <li><a href="#" style="color:black">  <div class="contentbox">
                                     <img src="../images/doughpaze.jpg"  alt="doughpaze" style="height:70px;width:70px; padding-left: 5px;">
                                     <div class="details">
                                     <span><b>Doughpaze</b></span>
@@ -107,7 +154,8 @@
                                     <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
                                 </div>
                         
-                                 </div>
+                                 </div></li></a>
+                                 </ul>
     </div>
 </div>
 
