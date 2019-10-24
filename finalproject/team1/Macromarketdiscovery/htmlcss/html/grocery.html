@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/grocery.css">
+<title> Grocery</title>
+</head>
+<script>
+function init1(){
+    location.href="restaurant.html";
+    document.getElementById(q1).style.cursor="pointer";
+}
+
+</script>
+<script>
+    function init2(){
+        location.href="theater.html";
+        document.getElementById(q2).style.cursor="pointer";
+    }
+    
+    </script>
+<style>
+        .dropbtn {
+           background-color:#FFFFFF;
+           color: white;
+           font-size: 10px;
+           border: none;
+           
+         }
+         
+          /* .dropdown {
+           position: relative;
+           display: inline-block;
+         } */
+         
+         .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: #f1f1f1;
+           min-width: 180px;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index: 1;
+           margin-left: 400px;
+           margin-top: 50px;
+         }
+         
+         .dropdown-content a {
+           color: black;
+           padding: 14px 16px;
+           text-decoration: none;
+           display: block;
+         }
+         
+         .dropdown-content a:hover {background-color: #ddd;}
+         
+         .dropdown:hover .dropdown-content {display: block;}
+         
+         </style>  
+<style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 700px;  /* The height is 400 pixels */
+         width: 100%;  /* The width is the width of the web page */
+        }
+     </style>
+     <style>
+            #myUL {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+            }
+            
+            #myUL li a {
+              text-decoration: none;
+              font-size: 14px;
+              color: black;
+              display: block
+            }
+            
+                #myUL li a:hover:not(.header) {
+                background-color: #eee;
+                }
+            </style>
+            <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+                </script>
+     
+<body>
+    <div class="leftbox">
+        <div class="maindiv">
+        <button type="button" style="width:200px; height:40px;color:white;border-radius: 25px;">Hunt2Discover</button>
+       <div class="searchbox" style="float:left;">
+           <div class="searchimg">
+               <img src="../images/request-icons-03.png" alt="searchimage" style="height:33px;width:33px;padding-top: 5px;">
+               <input type="text" id="myInput" onkeyup="myFunction()" style="border:none" placeholder="Search.." title="Type in a name">
+           </div>
+           <div class="cancelimg">
+               <img src="../images/cancel.png"  alt="cancelimage" style="height:33px;width:33px;padding-top: 5px;">
+            </div>
+         
+       </div>
+       <div class="dropdown">
+            <img onclick="myFunction1()" class="dropbtn" src="../images/request-icons-01.png" alt="filterimage" style="height:40px;width:53px;padding-top: 5px; float:left"/>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#restaurants" onclick="init1()" id="q1">restaurants</a>
+              <a href="#theater" onclick="init2()" id="q2">theater</a>
+              <a href="#groceryshop">groceryshop</a>
+              <a href="#saloon">saloon</a>
+              <a href="#foodcourt">foodcourt</a>
+              <a href="#cakeshop">cakeshop</a>
+              <a href="#gardens">gardens</a>
+            </div>
+          </div>
+         <div style="clear:both"></div>
+         <ul id="myUL"> <li><a href="#" style="color:black">
+                <div class="contentbox">
+                   <img src="../images/gv.jpg"  alt="gvsavanur" style="height:70px;width:70px; padding-left: 5px;">
+                   <div class="details">
+                   <span><b>G V Savanur Agencies</b></span>
+                   <span>2050.0 m    (Desai-Cross)</span>
+                   <span>#homeproducts #shopping </span>
+                 <span>Grocery shop</span>    
+               </div>
+               <div class="call">
+                   <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+               </div>
+       
+                </div></li></a>
+                <li><a href="#" style="color:black">
+                <div class="contentbox" onclick="init()" id="q">
+                       <img src="../images/akhila.jpg"  alt="akhila" style="height:70px;width:70px; padding-left: 5px;">
+                       <div class="details">
+                       <span><b>Akhila Gnereal Stores</b></span>
+                       <span>1998.0 m    (Keshwapur)</span>
+                       <span>#homeproducts #shopping </span>
+                       <span>Grocery shop</span>     
+                   </div>
+                   <div class="call">
+                       <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                   </div>
+           
+                    </div></li></a>
+                    <li><a href="#">
+                    <div class="contentbox">
+                           <img src="../images/nikitha.jpg"  alt="nikitha" style="height:70px;width:70px; padding-left: 5px;">
+                           <div class="details">
+                           <span><b>Nikitha Enterprizes</b></span>
+                           <span>100.0 m    (Gokul-Road)</span>
+                           <span>#homeproducts #shopping </span>
+                           <span>Grocery shop</span>     
+                       </div>
+                       <div class="call">
+                           <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                       </div>
+               
+                        </div></li></a>
+                        <li><a href="#" style="color:black">
+                        <div class="contentbox">
+                               <img src="../images/hublibazaar.jpg"  alt="hublibazaar" style="height:70px;width:70px; padding-left: 5px;">
+                               <div class="details">
+                               <span><b>The Hubballi Bazaar</b></span>
+                               <span>700.0 m    (Sai-Nagar)</span>
+                               <span>#homeproducts #shopping </span>
+                               <span>Grocery shop</span>    
+                           </div>
+                           <div class="call">
+                               <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                           </div>
+                   
+                            </div></li></a>
+                           <li><a href="#" style="color:black"> <div class="contentbox">
+                                   <img src="../images/renuka.jpg"  alt="renuka" style="height:70px;width:70px; padding-left: 5px;">
+                                   <div class="details">
+                                   <span><b>Renuka Kirani Stores</b></span>
+                                   <span>100.0 m    (Vidyanagar)</span>
+                                   <span>#homeproducts #shopping </span>
+                                   <span>Grocery shop</span>     
+                               </div>
+                               <div class="call">
+                                   <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                               </div>
+                       
+                                </div></li></a>
+                               <li><a href="#" style="color:black">  <div class="contentbox">
+                                       <img src="../images/flipfresh.jpg"  alt="flipfresh" style="height:70px;width:70px; padding-left: 5px;">
+                                       <div class="details">
+                                       <span><b>Flipfresh.In</b></span>
+                                       <span>500.0 m    (Shirurpark)</span>
+                                       <span>#homeproducts #shopping </span>
+                                       <span>Grocery shop</span>     
+                                   </div>
+                                   <div class="call">
+                                       <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                                   </div>
+                           
+                                    </div></li></a>
+                                   <li><a href="#" style="color:black">  <div class="contentbox">
+                                           <img src="../images/nammaangadi.jpg"  alt="nammaangadi" style="height:70px;width:70px; padding-left: 5px;">
+                                           <div class="details">
+                                           <span><b>Namma Angadi</b></span>
+                                           <span>900.0 m    (Vidyanagar)</span>
+                                           <span>#homeproducts #shopping </span>
+                                           <span>Grocery shop</span>     
+                                       </div>
+                                       <div class="call">
+                                           <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                                       </div>
+                               
+                                        </div></li></a>
+                                        </ul>
+    </div>
+    </div>
+    <div class="rightbox">
+            <div id="map"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap">
+       type="text/javascript"> </script>
+         <script>
+               // Initialize and add the map
+               function initMap() {
+                 // The location of Uluru
+                 var uluru = {lat: 	15.371598, lng:	75.101166};
+                 
+                 // The map, centered at Uluru
+                 var map = new google.maps.Map(
+                     document.getElementById('map'), {zoom: 16, center: uluru});
+                 // The marker, positioned at Uluru
+                 var marker = new google.maps.Marker({position: uluru, map: map});
+               }
+                   </script>
+         <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?client=06PXMAPmkgFRXHLlxNEu&v=quarterly&callback=initMap"></script> -->
+        
+            </div>
+    </div>
+    <div style="clear:both"></div>
+
+</body>
+</html>

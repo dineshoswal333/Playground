@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/theater.css">
+<title> Theatre</title>
+</head>
+<style>
+        .dropbtn {
+           background-color:#FFFFFF;
+           color: white;
+           font-size: 10px;
+           border: none;
+           
+         }
+         
+          /* .dropdown {
+           position: relative;
+           display: inline-block;
+         } */
+         
+         .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: #f1f1f1;
+           min-width: 180px;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index: 1;
+           margin-left: 400px;
+           margin-top: 50px;
+         }
+         
+         .dropdown-content a {
+           color: black;
+           padding: 14px 16px;
+           text-decoration: none;
+           display: block;
+         }
+         
+         .dropdown-content a:hover {background-color: #ddd;}
+         
+         .dropdown:hover .dropdown-content {display: block;}
+         
+         </style>  
+<style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 700px;  /* The height is 400 pixels */
+         width: 100%;  /* The width is the width of the web page */
+        }
+     </style>
+     <style>
+            #myUL {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+            }
+            
+            #myUL li a {
+              text-decoration: none;
+              font-size: 14px;
+              color: black;
+              display: block
+            }
+            
+                #myUL li a:hover:not(.header) {
+                background-color: #eee;
+                }
+            </style>
+            <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+                </script>
+     
+<body>
+    <div class="leftbox">
+        <div class="maindiv">
+        <button type="button" style="width:200px; height:40px;color:white;border-radius: 25px;">Hunt2Discover</button>
+       <div class="searchbox" style="float:left;">
+           <div class="searchimg">
+               <img src="../images/request-icons-03.png" alt="searchimage" style="height:33px;width:33px;padding-top: 5px;">
+               <input type="text" id="myInput" onkeyup="myFunction()" style="border:none" placeholder="Search.." title="Type in a name">
+           </div>
+           <div class="cancelimg">
+               <img src="../images/cancel.png"  alt="cancelimage" style="height:33px;width:33px;padding-top: 5px;">
+            </div>
+         
+       </div>
+       <div class="dropdown">
+            <img onclick="myFunction1()" class="dropbtn" src="../images/request-icons-01.png" alt="filterimage" style="height:40px;width:53px;padding-top: 5px; float:left"/>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#restaurants">restaurants</a>
+              <a href="#theater">theater</a>
+              <a href="#groceryshop">groceryshop</a>
+              <a href="#saloon">saloon</a>
+              <a href="#foodcourt">foodcourt</a>
+              <a href="#cakeshop">cakeshop</a>
+              <a href="#gardens">gardens</a>
+            </div>
+          </div>
+         <div style="clear:both"></div>
+         <ul id="myUL"> <li><a href="#" style="color:black">
+                <div class="contentbox">
+                   <img src="../images/pvr.jpg"  alt="pvr" style="height:70px;width:70px; padding-left: 5px;">
+                   <div class="details">
+                   <span><b>The PVR Cinemas</b></span>
+                   <span>1050.0 m(kopikar-road)</span>
+                   <span>#entertainment #cinemas</span>
+                   <span>Cinema theatre in hubballi</span>    
+               </div>
+               <div class="call">
+                   <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+               </div>
+       
+                </div></li></a>
+                <li><a href="#" style="color:black">
+                <div class="contentbox" onclick="init()" id="q">
+                       <img src="../images/apsara.jpg"  alt="apsara" style="height:70px;width:70px; padding-left: 5px;">
+                       <div class="details">
+                       <span><b>Apsara Theater</b></span>
+                       <span>1998.0 m(kopikar-road)</span>
+                       <span>#entertainment #cinemas</span>
+                       <span>Cinema theatre in hubballi</span>    
+                   </div>
+                   <div class="call">
+                       <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                   </div>
+                    
+                    </div></li></a>
+                    <li><a href="#">
+                            <div class="contentbox">
+                                    <img src="../images/sudha.jpg"  alt="sudha" style="height:70px;width:70px; padding-left: 5px;">
+                                    <div class="details">
+                                    <span><b>Sudha talkies</b></span>
+                                    <span>1000.0 m(PB-Road)</span>
+                                    <span>#entertainment #cinemas</span>
+                                    <span>theatre in hubballi</span>    
+                                </div>
+                       <div class="call">
+                           <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                       </div>
+               
+                        </div></li></a>
+                        <li><a href="#" style="color:black">
+                        <div class="contentbox">
+                               <img src="../images/rupam.jpg"  alt="rupam" style="height:70px;width:70px; padding-left: 5px;">
+                               <div class="details">
+                               <span><b>Rupam </b></span>
+                               <span>4700.0 m(dharwad)</span>
+                               <span>#entertainment #cinemas</span>
+                               <span>Restaurant in dharwad</span>    
+                           </div>
+                           <div class="call">
+                               <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                           </div>
+                   
+                            </div></li></a>
+                           <li><a href="#" style="color:black"> <div class="contentbox">
+                                   <img src="../images/oceanpearl.jpg"  alt="oceanpearl" style="height:70px;width:70px; padding-left: 5px;">
+                                   <div class="details">
+                                   <span><b>The Ocean Pearl</b></span>
+                                   <span>4500.0 m(dharwad)</span>
+                                   <span>#entertainment #cinemas</span>
+                                   <span>restaurant in dharwad
+                                   </span>    
+                               </div>
+                               <div class="call">
+                                   <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                               </div>
+                       
+                                </div></li></a>
+                               <li><a href="#" style="color:black">  <div class="contentbox">
+                                       <img src="../images/icecubes.jpg"  alt="icecubes" style="height:70px;width:70px; padding-left: 5px;">
+                                       <div class="details">
+                                       <span><b>Ice Cube</b></span>
+                                       <span>2500.0 m(gokul-road)</span>
+                                       <span>#entertainment #cinemas</span>
+                                       <span>Restaurant in hubballi</span>    
+                                   </div>
+                                   <div class="call">
+                                       <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                                   </div>
+                           
+                                    </div></li></a>
+                                   <li><a href="#" style="color:black">  <div class="contentbox">
+                                           <img src="../images/akshaysinn.jpg"  alt="akshaysinn" style="height:70px;width:70px; padding-left: 5px;">
+                                           <div class="details">
+                                           <span><b>Akshay's Inn</b></span>
+                                           <span>1900. m(gokul-road)</span>
+                                           <span>Restaurant in hubballi</span>    
+                                       </div>
+                                       <div class="call">
+                                           <img src="../images/call.png" alt="callimg" style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
+                                       </div>
+                               
+                                        </div></li></a>
+                                        </ul>
+    </div>
+    </div>
+    <div class="rightbox">
+            <div id="map"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap">
+       type="text/javascript"> </script>
+         <script>
+               // Initialize and add the map
+               function initMap() {
+                 // The location of Uluru
+                 var uluru = {lat: 	15.371598, lng:	75.101166};
+                 // The map, centered at Uluru
+                 var map = new google.maps.Map(
+                     document.getElementById('map'), {zoom: 8, center: uluru});
+                 // The marker, positioned at Uluru
+                 var marker = new google.maps.Marker({position: uluru, map: map});
+               }
+                   </script>
+         <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?client=06PXMAPmkgFRXHLlxNEu&v=quarterly&callback=initMap"></script> -->
+        
+            </div>
+    </div>
+    <div style="clear:both"></div>
+
+</body>
+</html>
