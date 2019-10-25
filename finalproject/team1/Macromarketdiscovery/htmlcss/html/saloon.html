@@ -138,10 +138,11 @@
                     <a href="#restaurants" onclick="init1()" id="q1">restaurants</a>
                     <a href="#theater" onclick="init2()" id="q2">theater</a>
                     <a href="#groceryshop" onclick="init3()" id="q3">groceryshop</a>
-                    <a href="#saloon">saloon</a>
+                    
                     <a href="#foodcourt">foodcourt</a>
                     <a href="#cakeshop">cakeshop</a>
                     <a href="#gardens">gardens</a>
+                    <a href="location.html" style="color:brown">removefilter</a>
                 </div>
             </div>
             <div style="clear:both"></div>
@@ -274,20 +275,37 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap">
                 type = "text/javascript" > </script>
         <script>
-                // Initialize and add the map
-                function initMap() {
-                    // The location of Uluru
-                    var uluru = { lat: 15.371598, lng: 75.101166 };
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = { lat: 15.371598, lng: 75.101166 };
 
-                    // The map, centered at Uluru
-                    var map = new google.maps.Map(
-                        document.getElementById('map'), { zoom: 16, center: uluru });
-                    // The marker, positioned at Uluru
-                    var marker = new google.maps.Marker({ position: uluru, map: map });
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 13, center: uluru });
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({ position: uluru, map: map, draggable: true, animation: google.maps.Animation.DROP, });
+                marker.addListener('click', toggleBounce);
+
+                var circle = new google.maps.Circle({
+                    center: uluru,
+                    map: map,
+                    radius: 5000,          // IN METERS.
+                    fillColor: '#FF6600',
+                    fillOpacity: 0.3,
+                    strokeColor: "#FFF",
+                    strokeWeight: 0         // DON'T SHOW CIRCLE BORDER.
+                });
+
+                function toggleBounce() {
+                    if (marker.getAnimation() !== null) {
+                        marker.setAnimation(null);
+                    } else {
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                    }
                 }
-        </script>
-        <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?client=06PXMAPmkgFRXHLlxNEu&v=quarterly&callback=initMap"></script> -->
-
+            }
+    </script>
     </div>
     </div>
     <div style="clear:both"></div>
