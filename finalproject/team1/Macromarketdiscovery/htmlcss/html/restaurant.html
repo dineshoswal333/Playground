@@ -135,7 +135,7 @@
             <div style="clear:both"></div>
             <ul id="myUL">
                 <li><a href="#" style="color:black">
-                        <div class="contentbox">
+                        <div class="contentbox" onclick="sigdidesc()" id="descsigdi">
                             <img src="../images/sigdi.jpg" alt="sigdirestaurant"
                                 style="height:70px;width:70px; padding-left: 5px;">
                             <div class="details">
@@ -150,6 +150,13 @@
                             </div>
 
                         </div>
+                        <script>
+                                function sigdidesc() {
+                                    location.href = "sigdidescription.html";
+                                    document.getElementById(q1).style.cursor = "pointer";
+                                }
+                            
+                            </script>
                 </li></a>
                 <li><a href="#" style="color:black">
                         <div class="contentbox" onclick="init()" id="q">
@@ -263,6 +270,9 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap">
                 type = "text/javascript" > </script>
           <script>
+
+
+   
                 // Initialize and add the map
                 // function initMap() {
                     // The location of Uluru
@@ -277,6 +287,8 @@
     });
     
                     infoWindow = new google.maps.InfoWindow;
+
+                    
 
                     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {

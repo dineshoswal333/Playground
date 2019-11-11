@@ -160,7 +160,9 @@
                         title="Type in a name">
                 </div>
                 <div class="cancelimg">
-                    <img src="../images/cancel.png" alt="cancelimage" style="height:33px;width:33px;padding-top: 5px;">
+                    <img src="../images/cancel.png" alt="cancelimage"
+                        onclick="document.getElementById('myInput').value = ''"
+                        style="height:33px;width:33px;padding-top: 5px;">
                 </div>
 
             </div>
@@ -180,7 +182,7 @@
             <div style="clear:both"></div>
             <ul id="myUL">
                 <li><a href="#" style="color:black">
-                        <div class="contentbox">
+                        <div class="contentbox" onclick="sigdidesc()" id="descsigdi">
                             <img src="../images/sigdi.jpg" alt="sigdirestaurant"
                                 style="height:70px;width:70px; padding-left: 5px;">
                             <div class="details">
@@ -189,12 +191,19 @@
                                 <span>#restaurants #food #family</span>
                                 <span>North Indian(pure veg)</span>
                             </div>
-                            <div class="call">
+                            <div class="call" onclick="sigdicall">
                                 <img src="../images/call.png" alt="callimg"
                                     style="height:60px;width:70px;padding-top: 5px; padding-left: 5px;">
                             </div>
 
                         </div>
+                        <script>
+                            function sigdidesc() {
+                                location.href = "sigdidescription.html";
+                                document.getElementById(q1).style.cursor = "pointer";
+                            }
+
+                        </script>
                 </li></a>
                 <li><a href="#" style="color:black">
                         <div class="contentbox" onclick="init()" id="q">
@@ -305,89 +314,86 @@
     <div class="rightbox">
         <div id="map">
             <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap">
-                    type = "text/javascript" > </script>
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH29e5wuvWjfDQjgJhfwBZzWzadI6sLcY&callback=initMap"> </script>
 
 
             <script>
-                    // Initialize and add the map
-                    // function initMap() {
-                    // The location of Uluru
-                    // var uluru = { lat: 15.371598, lng: 75.101166 };
+                // Initialize and add the map
+                // function initMap() {
+                // The location of Uluru
+                // var uluru = { lat: 15.371598, lng: 75.101166 };
 
-                    // // The map, centered at Uluru
-                    // var map = new google.maps.Map( document.getElementById('map'), { zoom: 13, center: uluru });
-                    function initMap() {
-                        map = new google.maps.Map(document.getElementById('map'), {
-                            center: { lat: 15.371598, lng: 75.101166 },
-                            zoom: 13
+                // // The map, centered at Uluru
+                // var map = new google.maps.Map( document.getElementById('map'), { zoom: 13, center: uluru });
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat: 15.371598, lng: 75.101166 },
+                        zoom: 13,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    });
+                    var locations = [
+                        ['Bondi Beach', 15.890542, 75.274856, 4],
+                        ['Coogee Beach', 15.923036, 75.259052, 5],
+                        ['Cronulla Beach', 15.028249, 75.157507, 3],
+                        ['Manly Beach', 15.80010128657071, 75.28747820854187, 2],
+                        ['Maroubra Beach', 15.950198, 75.259302, 1]
+                    ];
+                    var infowindows = new google.maps.InfoWindow();
+
+                    var markers, i;
+                    for (i = 0; i < locations.length; i++) {
+                        markers = new google.maps.Marker({
+                            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                            map: map
                         });
 
-                        var locations = [
-      ['The Sigdi Restaurant',  15.371599, 75.101167,4],
-      ['Anant Residency', 15.371591, 75.101161,3],
-      ['Cinepolis Cinema', 15.371592, 75.101162,2],
-      ['The Hubballi Bazaar', 15.371593, 75.101162,1],
-      ['Loreal Unisex Saloon',15.371594, 75.101164,0]
-    ];
-    
-    var infowindow = new google.maps.InfoWindow();
-
-var marker, i;
-
-for (i = 0; i < locations.length; i++) { 
-  marker = new google.maps.Marker({
-    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-    map: map
-
-  });
-
-  google.maps.event.addListener(marker, 'click', (function(marker, i) {
-    return function() {
-      infowindow.setContent(locations[i][0]);
-      infowindow.open(map, marker);
-    }
-  })(marker, i));
-}
-
-                        if (navigator.geolocation) {
-                            navigator.geolocation.getCurrentPosition(function (position) {
-                                var pos = {
-                                    lat: position.coords.latitude,
-                                    lng: position.coords.longitude
-                                };
-
-                                var marker = new google.maps.Marker({ position: pos, map: map, title: 'you seem to be here...', draggable: true, animation: google.maps.Animation.DROP, });
-                                marker.addListener('click', toggleBounce);
-                                var circle = new google.maps.Circle({
-                                    center: pos,
-                                    map: map,
-                                    radius: 5000,          // IN METERS.
-                                    fillColor: '#FF6600',
-                                    fillOpacity: 0.2,
-                                    strokeColor: "#FFF",
-                                    strokeWeight: 0         // DON'T SHOW CIRCLE BORDER.
-                                });
-                                function toggleBounce() {
-                                    if (marker.getAnimation() !== null) {
-                                        marker.setAnimation(null);
-                                    } else {
-                                        marker.setAnimation(google.maps.Animation.BOUNCE);
-                                    }
-                                }
-                                infoWindow.setPosition(pos);
-                                infoWindow.setContent('Location found, You are Here');
-                                infoWindow.open(map);
-                                map.setCenter(pos);
-                            },
-                                function () {
-                                    handleLocationError(true, infoWindow, map.getCenter());
-                                });
-                        } else {
-                            // Browser doesn't support Geolocation
-                            handleLocationError(false, infoWindow, map.getCenter());
-                        }
+                        google.maps.event.addListener(markers, 'click', (function (markers, i) {
+                            return function () {
+                                infowindows.setContent(locations[i][0]);
+                                infowindows.open(map, markers);
+                            }
+                        })(markers, i));
                     }
+
+
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(function (position) {
+                            var pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude
+                            };
+
+                            var marker = new google.maps.Marker({ position: pos, map: map, title: 'you seem to be here...', draggable: true, animation: google.maps.Animation.DROP, });
+                            marker.addListener('click', toggleBounce);
+                            var circle = new google.maps.Circle({
+                                center: pos,
+                                map: map,
+                                radius: 5000,          // IN METERS.
+                                fillColor: '#FF6600',
+                                fillOpacity: 0.2,
+                                strokeColor: "#FFF",
+                                strokeWeight: 0         // DON'T SHOW CIRCLE BORDER.
+                            });
+                            function toggleBounce() {
+                                if (marker.getAnimation() !== null) {
+                                    marker.setAnimation(null);
+                                } else {
+                                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                                }
+                            }
+                            infoWindow.setPosition(pos);
+                            infoWindow.setContent('Location found, You are Here');
+                            infoWindow.open(map);
+                            map.setCenter(pos);
+                        },
+                            function () {
+                                handleLocationError(true, infoWindow, map.getCenter());
+                            });
+                    } else {
+                        // Browser doesn't support Geolocation
+                        handleLocationError(false, infoWindow, map.getCenter());
+                    }
+                }
                 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                     infoWindow.setPosition(pos);
                     infoWindow.setContent(browserHasGeolocation ?
