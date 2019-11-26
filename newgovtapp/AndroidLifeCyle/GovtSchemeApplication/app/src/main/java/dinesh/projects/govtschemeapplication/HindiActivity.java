@@ -77,12 +77,12 @@ public class HindiActivity extends AppCompatActivity {
             }
         });
 
-        Others2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HindiActivity.this, Others2Activity.class);
-                startActivity(intent);
-            }
-        });
+       Others2.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(HindiActivity.this, Others2Activity.class);
+               startActivity(intent);
+           }
+       });
     }
 }

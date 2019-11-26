@@ -23,10 +23,10 @@ public class Education2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_education2);
 
-        Tribals2=findViewById(R.id.buttonTribals2);
-        Child2=findViewById(R.id.buttonChild2);
-        Laptop2=findViewById(R.id.buttonLaptop2);
-        Balika2=findViewById(R.id.buttonBalika2);
+        Tribals2=findViewById(R.id.buttonTribals3);
+        Child2=findViewById(R.id.buttonChild3);
+        Laptop2=findViewById(R.id.buttonLaptop3);
+        Balika2=findViewById(R.id.buttonBalika3);
 //        Khelo2=findViewById(R.id.buttonKhelo2);
 //        Kishore2=findViewById(R.id.buttonKishore2);
 //        National2=findViewById(R.id.buttonNational2);

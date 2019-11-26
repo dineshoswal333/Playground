@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/buttonTribals2"
+            android:id="@+id/buttonTribals3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Button
-            android:id="@+id/buttonChild2"
+            android:id="@+id/buttonChild3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -56,10 +56,10 @@
             android:text="एकीकृत बाल विकास"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonTribals2" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonTribals3" />
 
         <Button
-            android:id="@+id/buttonLaptop2"
+            android:id="@+id/buttonLaptop3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -70,10 +70,10 @@
             android:text="कर्नाटक मुफ्त लैपटॉप सरकार"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonChild2" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonChild3" />
 
         <Button
-            android:id="@+id/buttonBalika2"
+            android:id="@+id/buttonBalika3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -84,7 +84,7 @@
             android:text="कस्तूरबा गाँधी बालिका विद्यालय"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLaptop2" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLaptop3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

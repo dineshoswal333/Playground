@@ -20,10 +20,10 @@ public class FinanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finance);
 
-        Grants=findViewById(R.id.buttonGrants2);
-        Crops=findViewById(R.id.buttonCrops2);
-        Kayaka=findViewById(R.id.buttonKayaka2);
-        Pension=findViewById(R.id.buttonPension2);
+        Grants=findViewById(R.id.buttonGrants3);
+        Crops=findViewById(R.id.buttonCrops3);
+        Kayaka=findViewById(R.id.buttonKayaka3);
+        Pension=findViewById(R.id.buttonPension3);
 //        Service=findViewById(R.id.buttonService);
 //        Pooled=findViewById(R.id.buttonPooled);
 //        Jandhan=findViewById(R.id.buttonJandhan);

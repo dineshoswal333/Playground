@@ -16,10 +16,10 @@ public class Health2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health2);
-        Ayushman2=findViewById(R.id.buttonAyushman2);
-        Yeshasvini2 =findViewById(R.id.buttonYeshasvini2);
-        Meal2=findViewById(R.id.buttonMeal2);
-        Anila2=findViewById(R.id.buttonAnila2);
+        Ayushman2=findViewById(R.id.buttonAyushman3);
+        Yeshasvini2 =findViewById(R.id.buttonYeshasvini3);
+        Meal2=findViewById(R.id.buttonMeal3);
+        Anila2=findViewById(R.id.buttonAnila3);
 
         Ayushman2.setOnClickListener(new View.OnClickListener() {
             @Override

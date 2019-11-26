@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonAyushman2"
+        android:id="@+id/buttonAyushman3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/buttonYeshasvini2"
+        android:id="@+id/buttonYeshasvini3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -46,10 +46,10 @@
         android:text="Karnataka Yeshasvini Health Insurance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAyushman2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAyushman3" />
 
     <Button
-        android:id="@+id/buttonMeal2"
+        android:id="@+id/buttonMeal3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -60,10 +60,10 @@
         android:text="Midday meal scheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonYeshasvini2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonYeshasvini3" />
 
     <Button
-        android:id="@+id/buttonAnila2"
+        android:id="@+id/buttonAnila3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -74,5 +74,5 @@
         android:text="Mukhya mantri anila bhagya scheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMeal2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMeal3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

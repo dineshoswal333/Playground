@@ -17,7 +17,6 @@ public class Others2Activity extends AppCompatActivity {
     Button Green2;
     Button Matric2;
     Button Fellowship2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +24,8 @@ public class Others2Activity extends AppCompatActivity {
 
         Development2=findViewById(R.id.buttonDeen2);
         Top2=findViewById(R.id.buttonDigital2);
-        Badavara2 =findViewById(R.id.buttonGobar2);
-        Prabuddha2=findViewById(R.id.buttonGram2);
+        Badavara2=findViewById(R.id.buttonGobar2);
+        Prabuddha2=findViewById(R.id.buttonGram3);
         Overseas2=findViewById(R.id.buttonOverseas2);
         Social2=findViewById(R.id.buttonSocial2);
         Green2=findViewById(R.id.buttonGreen2);

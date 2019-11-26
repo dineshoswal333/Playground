@@ -18,10 +18,10 @@ public class HealthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health);
 
-        Ayushman=findViewById(R.id.buttonAyushman2);
-        Yeshasvini=findViewById(R.id.buttonYeshasvini2);
-        Meal=findViewById(R.id.buttonMeal2);
-        Anila=findViewById(R.id.buttonAnila2);
+        Ayushman=findViewById(R.id.buttonAyushman3);
+        Yeshasvini=findViewById(R.id.buttonYeshasvini3);
+        Meal=findViewById(R.id.buttonMeal3);
+        Anila=findViewById(R.id.buttonAnila3);
 
         Ayushman.setOnClickListener(new View.OnClickListener() {
             @Override

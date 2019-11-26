@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonGrants2"
+        android:id="@+id/buttonGrants3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/buttonCrops2"
+        android:id="@+id/buttonCrops3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -46,10 +46,10 @@
         android:text="Karnataka Gruhalaxmi Crop Loan Scheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonGrants2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonGrants3" />
 
     <Button
-        android:id="@+id/buttonKayaka2"
+        android:id="@+id/buttonKayaka3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -60,10 +60,10 @@
         android:text="Karnataka Kayaka Yojana Loan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCrops2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCrops3" />
 
     <Button
-        android:id="@+id/buttonPension2"
+        android:id="@+id/buttonPension3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -74,7 +74,7 @@
         android:text="National Pension System"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonKayaka2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonKayaka3" />
 
     <!--<Button-->
         <!--android:id="@+id/buttonService"-->

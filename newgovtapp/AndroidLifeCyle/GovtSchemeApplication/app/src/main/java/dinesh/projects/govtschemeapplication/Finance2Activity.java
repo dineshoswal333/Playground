@@ -17,10 +17,10 @@ public class Finance2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finance2);
 
-        Grants2=findViewById(R.id.buttonGrants2);
-        Crops2=findViewById(R.id.buttonCrops2);
-        Kayaka2=findViewById(R.id.buttonKayaka2);
-        Pension2=findViewById(R.id.buttonPension2);
+        Grants2=findViewById(R.id.buttonGrants3);
+        Crops2=findViewById(R.id.buttonCrops3);
+        Kayaka2=findViewById(R.id.buttonKayaka3);
+        Pension2=findViewById(R.id.buttonPension3);
 //        Service=findViewById(R.id.buttonService);
 //        Pooled=findViewById(R.id.buttonPooled);
 //        Jandhan=findViewById(R.id.buttonJandhan);
