@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dinesh.projects.govtschemeapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Education3Activity"></activity>
+        <activity android:name=".FellowshipActivity" />
+        <activity android:name=".Fellowship2Activity" />
+        <activity android:name=".MatricActivity" />
+        <activity android:name=".Matric2Activity" />
+        <activity android:name=".GreenActivity" />
+        <activity android:name=".Green2Activity" />
+        <activity android:name=".SocialActivity" />
+        <activity android:name=".Social2Activity" />
+        <activity android:name=".Overseas2Activity" />
+        <activity android:name=".OverseasActivity" />
+        <activity android:name=".Prabuddha2Activity" />
+        <activity android:name=".Badavara2Activity" />
+        <activity android:name=".Top2Activity" />
+        <activity android:name=".Development2Activity" />
+        <activity android:name=".Gram2Activity" />
+        <activity android:name=".Gobar2Activity" />
+        <activity android:name=".Digital2Activity" />
+        <activity android:name=".Deen2Activity" />
+        <activity android:name=".Ujjawala2Activity" />
+        <activity android:name=".Bijli2Activity" />
+        <activity android:name=".Awas2Activity" />
+        <activity android:name=".Land2Activity" />
+        <activity android:name=".Ashram2Activity" />
+        <activity android:name=".Meal2Activity" />
+        <activity android:name=".Yeshasvini2Activity" />
+        <activity android:name=".Ayushman2Activity" />
+        <activity android:name=".Anila2Activity" />
+        <activity android:name=".Pension2Activity" />
+        <activity android:name=".Kayaka2Activity" />
+        <activity android:name=".Crops2Activity" />
+        <activity android:name=".Grants2Activity" />
+        <activity android:name=".Approach2Activity" />
+        <activity android:name=".Kaushal2Activity" />
+        <activity android:name=".Fasal2Activity" />
+        <activity android:name=".Others2Activity" />
+        <activity android:name=".Welfare2Activity" />
+        <activity android:name=".Housing2Activity" />
+        <activity android:name=".Health2Activity" />
+        <activity android:name=".Finance2Activity" />
+        <activity android:name=".Farmers2Activity" />
+        <activity android:name=".Samgara2Activity" />
+        <activity android:name=".Pre2Activity" />
+        <activity android:name=".National2Activity" />
+        <activity android:name=".Kishore2Activity" />
+        <activity android:name=".Khelo2Activity" />
+        <activity android:name=".Balika2Activity" />
+        <activity android:name=".Laptop2Activity" />
+        <activity android:name=".Child2Activity" />
+        <activity android:name=".Tribal2Activity" />
+        <activity android:name=".Education2Activity" />
+        <activity android:name=".PrabuddhaActivity" />
+        <activity android:name=".BadavaraActivity" />
+        <activity android:name=".TopActivity" />
+        <activity android:name=".DevelopmentActivity" />
+        <activity android:name=".GramActivity" />
+        <activity android:name=".GobarActivity" />
+        <activity android:name=".DigitalActivity" />
+        <activity android:name=".DeenActivity" />
+        <activity android:name=".UjjawalaActivity" />
+        <activity android:name=".BijliActivity" />
+        <activity android:name=".AwasActivity" />
+        <activity android:name=".LandActivity" />
+        <activity android:name=".AshramActivity" />
+        <activity android:name=".AnilaActivity" />
+        <activity android:name=".Mealctivity" />
+        <activity android:name=".YeshasviniActivity" />
+        <activity android:name=".AyushmanActivity" />
+        <activity android:name=".PensionActivity" />
+        <activity android:name=".KayakaActivity" />
+        <activity android:name=".CropActivity" />
+        <activity android:name=".GrantsActivity" />
+        <activity android:name=".ApproachActivity" />
+        <activity android:name=".KaushalActivity" />
+        <activity android:name=".FasalPdfActivity" />
+        <activity android:name=".SamgaraPdfActivity" />
+        <activity android:name=".PrePdfActivity" />
+        <activity android:name=".NationalPdfActivity" />
+        <activity android:name=".KishorePdfActivity" />
+        <activity android:name=".KheloPdfActivity" />
+        <activity android:name=".BalikaPdfActivity" />
+        <activity android:name=".LaptopPdfActivity" />
+        <activity android:name=".ChildPdfActivity" />
+        <activity android:name=".EducationPdfActivity" />
+        <activity android:name=".OthersActivity" />
+        <activity android:name=".WelfareActivity" />
+        <activity android:name=".HousingActivity" />
+        <activity android:name=".HealthActivity" />
+        <activity android:name=".FinanceActivity" />
+        <activity android:name=".FarmersActivity" />
+        <activity android:name=".EducationActivity" />
+        <activity android:name=".KannadaActivity" />
+        <activity android:name=".HindiActivity" />
+        <activity android:name=".EnglishActivity" />
+        <activity android:name=".LanguageActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
