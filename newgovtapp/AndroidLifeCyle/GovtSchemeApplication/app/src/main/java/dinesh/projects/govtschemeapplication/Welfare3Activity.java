@@ -20,7 +20,7 @@ public class Welfare3Activity extends AppCompatActivity {
         Deen3=findViewById(R.id.buttonDeen2);
         Digital3=findViewById(R.id.buttonDigital2);
         Gobar3=findViewById(R.id.buttonGobar2);
-        Gram3=findViewById(R.id.buttonGram3);
+        Gram3=findViewById(R.id.buttonGram2);
 
         Deen3.setOnClickListener(new View.OnClickListener() {
             @Override

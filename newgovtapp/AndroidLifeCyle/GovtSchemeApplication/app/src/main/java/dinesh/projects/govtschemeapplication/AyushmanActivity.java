@@ -16,6 +16,6 @@ public class AyushmanActivity extends AppCompatActivity {
 
         Ayushman=findViewById(R.id.ayushman_pdf);
 
-        Ayushman.fromAsset("Ayushman bharat-English").load();
+        Ayushman.fromAsset("Ayushman bharat-English.pdf").load();
     }
 }

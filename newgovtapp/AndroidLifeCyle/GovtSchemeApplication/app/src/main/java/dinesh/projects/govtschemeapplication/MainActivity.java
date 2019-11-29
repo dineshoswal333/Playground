@@ -1,5 +1,6 @@
 package dinesh.projects.govtschemeapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputLayout password;
     Button loginButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +26,11 @@ public class MainActivity extends AppCompatActivity {
         password=findViewById(R.id.password);
         loginButton=findViewById(R.id.loginButton);
 
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((userName.getText().toString().equals("d")) && (password.getEditText().getText().toString().equals(""))) {
+                if ((userName.getText().toString().equals("gvtschemes")) && (password.getEditText().getText().toString().equals("gvt@123"))) {
                     Toast.makeText(getApplicationContext(), "Login successful", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(MainActivity.this, LanguageActivity.class);
                     startActivity(intent);
@@ -35,10 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "enter correct login details", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Invalid Credentials", Toast.LENGTH_LONG).show();
                 }
+
             }
+
         });
+
 
     }
 

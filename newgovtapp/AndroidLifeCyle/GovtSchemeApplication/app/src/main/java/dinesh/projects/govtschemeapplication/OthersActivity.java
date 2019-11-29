@@ -26,7 +26,7 @@ public class OthersActivity extends AppCompatActivity {
         Development=findViewById(R.id.buttonDeen2);
         Top=findViewById(R.id.buttonDigital2);
         Badavara=findViewById(R.id.buttonGobar2);
-        Prabuddha=findViewById(R.id.buttonGram3);
+        Prabuddha=findViewById(R.id.buttonGram2);
         Overseas=findViewById(R.id.buttonOverseas2);
         Social=findViewById(R.id.buttonSocial2);
         Green=findViewById(R.id.buttonGreen2);
